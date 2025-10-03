@@ -47,20 +47,20 @@ export default function Dash() {
   }, [debouncedQuery]);
 
   const languageToClass: Record<string, string> = {
-    python: "bg-yellow-300/50 border-yellow-300 text-yellow-600",
-    typescript: "bg-blue-200/50 border-blue-200 text-blue-600",
-    "c++": "bg-purple-200/50 border-purple-200 text-purple-600",
-    c: "bg-gray-200/50 border-gray-200 text-gray-600",
-    javascript: "bg-yellow-100/50 border-yellow-300 text-yellow-600",
-    go: "bg-cyan-200/50 border-cyan-200 text-cyan-600",
-    java: "bg-orange-200/50 border-orange-200 text-orange-600",
-    ruby: "bg-red-200/50 border-red-200 text-red-600",
-    rust: "bg-orange-300/50 border-orange-300 text-orange-700",
-    php: "bg-indigo-200/50 border-indigo-200 text-indigo-600",
-    kotlin: "bg-pink-200/50 border-pink-200 text-pink-600",
-    swift: "bg-teal-200/50 border-teal-200 text-teal-600",
-    scala: "bg-green-200/50 border-green-200 text-green-600",
-    shell: "bg-gray-300/50 border-gray-300 text-gray-700",
+    python: "bg-yellow-300/50 border-yellow-300 text-yellow-600 dark:bg-yellow-900/40 dark:border-yellow-700 dark:text-yellow-200",
+    typescript: "bg-blue-200/50 border-blue-200 text-blue-600 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200",
+    "c++": "bg-purple-200/50 border-purple-200 text-purple-600 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200",
+    c: "bg-gray-200/50 border-gray-200 text-gray-600 dark:bg-gray-800/40 dark:border-gray-700 dark:text-gray-200",
+    javascript: "bg-yellow-100/50 border-yellow-300 text-yellow-600 dark:bg-yellow-900/40 dark:border-yellow-700 dark:text-yellow-200",
+    go: "bg-cyan-200/50 border-cyan-200 text-cyan-600 dark:bg-cyan-900/40 dark:border-cyan-700 dark:text-cyan-200",
+    java: "bg-orange-200/50 border-orange-200 text-orange-600 dark:bg-orange-900/40 dark:border-orange-700 dark:text-orange-200",
+    ruby: "bg-red-200/50 border-red-200 text-red-600 dark:bg-red-900/40 dark:border-red-700 dark:text-red-200",
+    rust: "bg-orange-300/50 border-orange-300 text-orange-700 dark:bg-orange-900/40 dark:border-orange-700 dark:text-orange-200",
+    php: "bg-indigo-200/50 border-indigo-200 text-indigo-600 dark:bg-indigo-900/40 dark:border-indigo-700 dark:text-indigo-200",
+    kotlin: "bg-pink-200/50 border-pink-200 text-pink-600 dark:bg-pink-900/40 dark:border-pink-700 dark:text-pink-200",
+    swift: "bg-teal-200/50 border-teal-200 text-teal-600 dark:bg-teal-900/40 dark:border-teal-700 dark:text-teal-200",
+    scala: "bg-green-200/50 border-green-200 text-green-600 dark:bg-green-900/40 dark:border-green-700 dark:text-green-200",
+    shell: "bg-gray-300/50 border-gray-300 text-gray-700 dark:bg-gray-800/40 dark:border-gray-700 dark:text-gray-200",
   };
 
   function getLanguageClass(language: string | null): string {
@@ -89,9 +89,11 @@ export default function Dash() {
             <a href={r.html_url} target="_blank" rel="noreferrer" className="font-medium underline ">
               {r.full_name} 
             </a>
-            <span className={`rounded-xl underline-offset-0 px-2 border-1 text-sm ${getLanguageClass(r.language)}`}>
-                {r.language || "Unknown"}
-              </span>
+            <span
+              className={`rounded-xl underline-offset-0 px-2 border-1 text-sm ${getLanguageClass(r.language)} bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100`}
+            >
+              {r.language || "Unknown"}
+            </span>
             </div>
             <div className="text-sm text-gray-600 flex items-center gap-2 mt-1">
               <span> Stars: {r.stargazers_count} · Issues: {r.open_issues_count}</span>
