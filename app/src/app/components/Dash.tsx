@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Loader from "./ui/Loader";
 
 type Repo = {
   id: number;
@@ -11,6 +12,8 @@ type Repo = {
   open_issues_count: number;
   owner: { login: string; avatar_url: string };
   language: string | null;
+  forks_count?: number;
+  topics?: string[];
 };
 
 export default function Dash() {
@@ -48,7 +51,7 @@ export default function Dash() {
 
   const languageToClass: Record<string, string> = {
     python: "bg-yellow-300/50 border-yellow-300 text-yellow-600 dark:bg-yellow-900/40 dark:border-yellow-700 dark:text-yellow-200",
-    typescript: "bg-blue-200/50 border-blue-200 text-blue-600 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200",
+    typescript: "bg-blue-200/50 border-blue-200 text-blue-600 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-400",
     "c++": "bg-purple-200/50 border-purple-200 text-purple-600 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200",
     c: "bg-gray-200/50 border-gray-200 text-gray-600 dark:bg-gray-800/40 dark:border-gray-700 dark:text-gray-200",
     javascript: "bg-yellow-100/50 border-yellow-300 text-yellow-600 dark:bg-yellow-900/40 dark:border-yellow-700 dark:text-yellow-200",
@@ -64,48 +67,78 @@ export default function Dash() {
   };
 
   function getLanguageClass(language: string | null): string {
-    if (!language) return "bg-neutral-100 border-1 border-neutral-200";
+    if (!language) return "bg-neutral-100 border-1 border-neutral-200 bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100";
     const key = language.toLowerCase();
     return languageToClass[key] || "bg-neutral-100";
   }
 
   return (
-    <div className="max-w-3xl mx-auto p-4 space-y-4">
+    <div className="w-full h-screen  mx-auto p-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
+     
+     <div className="relative">
+        <div className="flex flex-col gap-4">
+      
       <h1 className="text-2xl font-medium tracking-tight">GitHub Repos with Issues (Under Production)</h1>
-      <div className="flex gap-2">
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search topics or keywords (e.g. nextjs, express, typescript)"
-          className="flex-1 border rounded px-3 py-2"
+          className="w-full border rounded px-3 py-2"
         />
+        </div>
       </div>
-      {loading && <p>Loading…</p>}
-      {error && <p className="text-red-600">{error}</p>}
-      <ul className="space-y-3">
-        {repos.map((r) => (
-          <li key={r.id} className=" rounded p-3 shadow-sm">
-            <div className="flex items-center justify-between">
-            <a href={r.html_url} target="_blank" rel="noreferrer" className="font-medium underline ">
-              {r.full_name} 
-            </a>
-            <span
-              className={`rounded-xl underline-offset-0 px-2 border-1 text-sm ${getLanguageClass(r.language)} bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100`}
-            >
-              {r.language || "Unknown"}
-            </span>
-            </div>
-            <div className="text-sm text-gray-600 flex items-center gap-2 mt-1">
-              <span> Stars: {r.stargazers_count} · Issues: {r.open_issues_count}</span>
-              
-            </div>
-            {r.description && <p className="text-sm mt-1">{r.description}</p>}
-          </li>
-        ))}
-        {!loading && !error && repos.length === 0 && (
-          <li className="text-sm text-gray-600">No results yet. Try a search.</li>
-        )}
-      </ul>
+      {loading && <Loader/>}
+      {error && <p className="text-red-600 dark:text-red-400">{error}</p>}
+      <div className=" h-screen scroll-smooth">
+        <table className="w-full text-sm text-neutral-800 dark:text-neutral-200">
+          <thead className="sticky top-0 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-100">
+            <tr className="text-left">
+              <th className="py-4 px-2">Repository</th>
+              <th className="py-2 px-2">Language</th>
+              <th className="py-2 px-2">Tags</th>
+              <th className="py-2 px-2">Stars</th>
+              <th className="py-2 px-2">Issues</th>
+              <th className="py-2 px-2">Forks</th>
+            </tr>
+          </thead>
+          <tbody>
+            {repos.map((r) => (
+              <tr key={r.id} className="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900">
+                <td className="py-6 px-2 max-w-sm">
+                  <a href={r.html_url} target="_blank" rel="noreferrer" className="font-medium underline">
+                    {r.full_name}
+                  </a>
+                  {r.description && <div className="text-neutral-600 dark:text-neutral-400 text-xs mt-0.5">{r.description}</div>}
+                </td>
+                <td className="py-2 px-2  max-w-20">
+                  <span className={`rounded-xl px-2 border-1 ${getLanguageClass(r.language)}`}>
+                    {r.language || "Unknown"}
+                  </span>
+                </td>
+                <td className="py-2 px-2 max-w-[24ch]">
+                  <div className="flex flex-wrap gap-1">
+                    {(r.topics || []).slice(0, 4).map((t) => (
+                      <span key={t} className="px-2 py-0.5 rounded-full border text-xs border-neutral-200 dark:border-neutral-700">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </td>
+                <td className="py-2 px-2 tabular-nums">{r.stargazers_count.toLocaleString()}</td>
+                <td className="py-2 px-2 tabular-nums">{r.open_issues_count.toLocaleString()}</td>
+                <td className="py-2 px-2 tabular-nums">{(r.forks_count ?? 0).toLocaleString()}</td>
+              </tr>
+            ))}
+            {!loading && !error && repos.length === 0 && (
+              <tr>
+                <td colSpan={6} className="py-6 text-center text-neutral-600 dark:text-neutral-400">No results yet. Try a search.</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      
+      </div>
+      
     </div>
   );
 }

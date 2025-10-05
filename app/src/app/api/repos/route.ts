@@ -10,8 +10,10 @@ type GitHubRepo = {
   description: string | null;
   stargazers_count: number;
   open_issues_count: number;
+  forks_count: number;
   owner: { login: string; avatar_url: string; html_url: string };
   language: string | null;
+  topics?: string[];
 };
 
 type SearchResponse = {
