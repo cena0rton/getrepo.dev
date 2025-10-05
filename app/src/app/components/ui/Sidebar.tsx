@@ -3,7 +3,7 @@ import React from 'react'
 const Sidebar = () => {
   return (
     <div>
-        <div className="w-60 border-r border-t border-neutral-50/20 h-screen flex flex-col items-start p-4">
+        <div className="w-60 sticky left-0 border-r border-t border-neutral-50/20 h-screen flex flex-col items-start p-4">
         <span className='text-2xl tracking-tight font-medium p-2'> getRepo.dev</span>
 
      <nav className="mt-8 flex flex-col gap-2 w-full">

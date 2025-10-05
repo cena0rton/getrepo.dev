@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Loader from "./ui/Loader";
+import Image from "next/image";
 
 type Repo = {
   id: number;
@@ -73,10 +74,10 @@ export default function Dash() {
   }
 
   return (
-    <div className="w-full h-screen  mx-auto p-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
+    <div className="w-full h-screen   mx-auto p-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
      
      <div className="relative">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 ">
       
       <h1 className="text-2xl font-medium tracking-tight">GitHub Repos with Issues (Under Production)</h1>
         <input
@@ -103,12 +104,27 @@ export default function Dash() {
           </thead>
           <tbody>
             {repos.map((r) => (
-              <tr key={r.id} className="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900">
+              <tr key={r.id} className="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 group">
                 <td className="py-6 px-2 max-w-sm">
-                  <a href={r.html_url} target="_blank" rel="noreferrer" className="font-medium underline">
-                    {r.full_name}
-                  </a>
-                  {r.description && <div className="text-neutral-600 dark:text-neutral-400 text-xs mt-0.5">{r.description}</div>}
+                  <div className="flex items-center gap-2">
+                    {r.owner?.avatar_url && (
+                      <Image
+                        src={r.owner.avatar_url}
+                        alt={r.owner.login}
+                        className="size-6 rounded-full border border-neutral-200 dark:border-neutral-700"
+                        loading="lazy"
+                        width={34}
+                        height={34}
+                      />
+                    )}
+                    <div>
+                    <a href={r.html_url} target="_blank" rel="noreferrer" className="font-medium underline group-hover">
+                      {r.full_name}
+                    </a>
+                    {r.description && <div className="text-neutral-600 dark:text-neutral-400 text-xs max-w-xl mt-0.5">{r.description}</div>}
+                    </div>
+                  </div>
+                  
                 </td>
                 <td className="py-2 px-2  max-w-20">
                   <span className={`rounded-xl px-2 border-1 ${getLanguageClass(r.language)}`}>

@@ -1,13 +1,14 @@
 
 import Dash from "./components/Dash";
+import Page from "./dashboard/page";
 
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen p-6">
-        <section className="max-w-5xl mx-auto">
-          <Dash />
-        </section>
+      <main className="min-h-screen">
+       
+          <Page />
+        
       </main>
     </>
   );
