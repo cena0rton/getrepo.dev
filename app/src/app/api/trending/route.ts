@@ -6,11 +6,11 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const language = searchParams.get("language");
-    const perPage = searchParams.get("per_page") || "10";
+    const perPage = searchParams.get("per_page") || "50";
     // Trending approximation: repos with many stars created in last 14 days
     const since = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000)
       .toISOString()
-      .slice(0, 10);
+      .slice(0, 50);
     const qualifiers = [
       `created:>${since}`,
       "is:public",
