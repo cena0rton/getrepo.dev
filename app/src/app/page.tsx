@@ -1,5 +1,5 @@
 
-import Dash from "./components/Dash";
+import Dash from "./dashboard/Dash";
 import Page from "./dashboard/page";
 
 export default function Home() {

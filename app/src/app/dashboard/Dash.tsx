@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Loader from "./ui/Loader";
+import Loader from "../components/ui/Loader";
 import Image from "next/image";
 
 type Repo = {
@@ -22,6 +22,12 @@ export default function Dash() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [repos, setRepos] = useState<Repo[]>([]);
+  const [language, setLanguage] = useState<string>("");
+  const [sort, setSort] = useState<string>("stars");
+  const [order, setOrder] = useState<string>("desc");
+  const [page, setPage] = useState<number>(1);
+  const [perPage] = useState<number>(20);
+  const [total, setTotal] = useState<number>(0);
 
   const debouncedQuery = useDebouncedValue(query, 400);
 
@@ -33,10 +39,18 @@ export default function Dash() {
       try {
         const url = new URL("/api/repos", window.location.origin);
         if (debouncedQuery) url.searchParams.set("q", debouncedQuery);
+        if (language) url.searchParams.set("language", language);
+        if (sort) url.searchParams.set("sort", sort);
+        if (order) url.searchParams.set("order", order);
+        url.searchParams.set("per_page", String(perPage));
+        url.searchParams.set("page", String(page));
         const res = await fetch(url.toString());
         const data = await res.json();
         if (!res.ok) throw new Error(data?.error || "Failed to load");
-        if (!cancelled) setRepos(data.repos ?? []);
+        if (!cancelled) {
+          setRepos(data.repos ?? []);
+          setTotal(Number(data.total || 0));
+        }
       } catch (e: unknown) {
         if (!cancelled)
           setError(e instanceof Error ? e.message : "Something went wrong");
@@ -48,7 +62,7 @@ export default function Dash() {
     return () => {
       cancelled = true;
     };
-  }, [debouncedQuery]);
+  }, [debouncedQuery, language, sort, order, page, perPage]);
 
   const languageToClass: Record<string, string> = {
     python: "bg-yellow-300/50 border-yellow-300 text-yellow-600 dark:bg-yellow-900/40 dark:border-yellow-700 dark:text-yellow-200",
@@ -79,17 +93,44 @@ export default function Dash() {
      <div className="relative">
         <div className="flex flex-col gap-4 ">
       
-      <h1 className="text-2xl font-medium tracking-tight">GitHub Repos with Issues (Under Production)</h1>
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search topics or keywords (e.g. nextjs, express, typescript)"
-          className="w-full border rounded px-3 py-2"
-        />
+      <h1 className="text-2xl font-medium tracking-tight">GitHub Repos</h1>
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_140px_140px_120px] gap-2">
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search (e.g. nextjs, express, typescript)"
+            className="w-full border rounded px-3 py-2"
+          />
+          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border rounded px-2 py-2">
+            <option value="">All languages</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Go">Go</option>
+            <option value="C++">C++</option>
+            <option value="C">C</option>
+            <option value="Ruby">Ruby</option>
+            <option value="PHP">PHP</option>
+            <option value="Rust">Rust</option>
+          </select>
+          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border rounded px-2 py-2">
+            <option value="stars">Sort: Stars</option>
+            <option value="forks">Sort: Forks</option>
+            <option value="updated">Sort: Recently Updated</option>
+          </select>
+          <select value={order} onChange={(e) => setOrder(e.target.value)} className="border rounded px-2 py-2">
+            <option value="desc">Desc</option>
+            <option value="asc">Asc</option>
+          </select>
+        </div>
         </div>
       </div>
       {loading && <Loader/>}
       {error && <p className="text-red-600 dark:text-red-400">{error}</p>}
+
+
+      
       <div className=" h-screen scroll-smooth">
         <table className="w-full text-sm text-neutral-800 dark:text-neutral-200">
           <thead className="sticky top-0 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-100">
@@ -152,7 +193,33 @@ export default function Dash() {
             )}
           </tbody>
         </table>
-      
+
+
+
+        <div className="sticky bottom-0 flex items-center justify-between p-3  w-full backdrop-blur-lg">
+          <div className="text-xs text-neutral-600 dark:text-neutral-400">
+            Page {page} · Showing {repos.length} of {total.toLocaleString()} results
+          </div>
+          <div className="flex gap-2">
+            <button
+              className="border rounded px-3 py-1 disabled:opacity-50"
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+              disabled={page <= 1 || loading}
+            >
+              Prev
+            </button>
+            <button
+              className="border rounded px-3 py-1 disabled:opacity-50"
+              onClick={() => {
+                setPage((p) => p + 1);
+               
+              }}
+              disabled={loading || repos.length < perPage}
+            >
+              Next
+            </button>
+          </div>
+        </div>
       </div>
       
     </div>

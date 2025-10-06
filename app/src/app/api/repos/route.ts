@@ -27,9 +27,6 @@ async function fetchReposWithIssues(query: string, token?: string): Promise<Sear
   const q = query?.trim() ? `${query} in:name,description,readme` : "";
   const qualifiers = ["is:public", "archived:false", "good-first-issues:>0"].join(" ");
   url.searchParams.set("q", [q, qualifiers].filter(Boolean).join(" "));
-  url.searchParams.set("sort", "stars");
-  url.searchParams.set("order", "desc");
-  url.searchParams.set("per_page", "20");
 
   const headers: Record<string, string> = { Accept: "application/vnd.github+json" };
   if (token) headers.Authorization = `Bearer ${token}`;
@@ -47,9 +44,42 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const q = searchParams.get("q") || "";
+    const language = searchParams.get("language");
+    const sort = searchParams.get("sort") || "stars"; // stars | forks | updated
+    const order = searchParams.get("order") || "desc"; // desc | asc
+    const perPage = searchParams.get("per_page") || "50";
+    const page = searchParams.get("page") || "1";
     const token = process.env.GITHUB_TOKEN;
-    const data = await fetchReposWithIssues(q, token);
-    return new Response(JSON.stringify({ total: data.total_count, repos: data.items }), {
+    // Build dynamic qualifiers
+    const base = q.trim() ? `${q} in:name,description,readme` : "";
+    const qualifiers = [
+      "is:public",
+      "archived:false",
+      "good-first-issues:>0",
+      language ? `language:${language}` : "",
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    const url = new URL(`${GITHUB_API}/search/repositories`);
+    url.searchParams.set("q", [base, qualifiers].filter(Boolean).join(" "));
+    url.searchParams.set("sort", sort);
+    url.searchParams.set("order", order);
+    url.searchParams.set("per_page", perPage);
+    url.searchParams.set("page", page);
+
+    const headers: Record<string, string> = { Accept: "application/vnd.github+json" };
+    if (token) headers.Authorization = `Bearer ${token}`;
+    headers["X-GitHub-Api-Version"] = "2022-11-28";
+
+    const res = await fetch(url.toString(), { headers, next: { revalidate: 0 } });
+    if (!res.ok) {
+      const text = await res.text().catch(() => "");
+      throw new Error(`GitHub API error ${res.status}: ${text}`);
+    }
+    const data: SearchResponse = await res.json();
+
+    return new Response(JSON.stringify({ total: data.total_count, repos: data.items, page: Number(page), per_page: Number(perPage) }), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });

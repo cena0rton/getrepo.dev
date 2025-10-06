@@ -1,17 +1,23 @@
+"use client"
 import React from 'react'
-import Sidebar from '../components/ui/Sidebar'
-import Dash from '../components/Dash'
+import Sidebar from './Sidebar'
+import Dash from './Dash'
+import TrendingPage from '../trending/page'
 
 const Page = () => {
+
+const [active, setActive] = React.useState<string>("base")
   return (
     <main className="min-h-screen">
       
         <div className="hidden md:block fixed inset-y-0 left-0 w-[240px] z-20 bg-white dark:bg-neutral-900 border-r border-neutral-100 dark:border-neutral-800">
-          <Sidebar />
+          <Sidebar setActive={setActive} />
         </div>
 
+    
         <div className='px-2 pl-[240px]'>
-        <Dash />
+         {active === "base" && <Dash />}
+         {active === "trending" && <TrendingPage/>}
         </div>
         
         
@@ -19,5 +25,4 @@ const Page = () => {
     </main>
   )
 }
-
 export default Page
