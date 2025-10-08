@@ -99,9 +99,9 @@ export default function Dash() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search (e.g. nextjs, express, typescript)"
-            className="w-full border rounded px-3 py-2"
+            className="w-full border border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 outline-none"
           />
-          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border rounded px-2 py-2">
+          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
             <option value="">All languages</option>
             <option value="JavaScript">JavaScript</option>
             <option value="TypeScript">TypeScript</option>
@@ -114,12 +114,12 @@ export default function Dash() {
             <option value="PHP">PHP</option>
             <option value="Rust">Rust</option>
           </select>
-          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border rounded px-2 py-2">
+          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
             <option value="stars">Sort: Stars</option>
             <option value="forks">Sort: Forks</option>
             <option value="updated">Sort: Recently Updated</option>
           </select>
-          <select value={order} onChange={(e) => setOrder(e.target.value)} className="border rounded px-2 py-2">
+          <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
             <option value="desc">Desc</option>
             <option value="asc">Asc</option>
           </select>
