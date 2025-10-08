@@ -3,6 +3,7 @@ import React from 'react'
 import Sidebar from './Sidebar'
 import Dash from './Dash'
 import TrendingPage from '../trending/page'
+import BeginnersGuide from '../guide/page'
 
 const Page = () => {
 
@@ -18,6 +19,7 @@ const [active, setActive] = React.useState<string>("base")
         <div className='px-2 pl-[240px]'>
          {active === "base" && <Dash />}
          {active === "trending" && <TrendingPage/>}
+         {active === "Guide" && <BeginnersGuide/>}
         </div>
         
         
