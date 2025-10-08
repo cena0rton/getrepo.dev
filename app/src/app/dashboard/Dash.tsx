@@ -99,10 +99,10 @@ export default function Dash() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search (e.g. nextjs, express, typescript)"
-            className="w-full border border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 outline-none"
+            className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800"
           />
-          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
-            <option value="">All languages</option>
+          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300">
+            <option value="" className="text-neutral-300">All languages</option>
             <option value="JavaScript">JavaScript</option>
             <option value="TypeScript">TypeScript</option>
             <option value="Python">Python</option>
@@ -114,12 +114,12 @@ export default function Dash() {
             <option value="PHP">PHP</option>
             <option value="Rust">Rust</option>
           </select>
-          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
-            <option value="stars">Sort: Stars</option>
-            <option value="forks">Sort: Forks</option>
+          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300">
+            <option value="stars" className="text-neutral-300">Sort: Stars</option>
+            <option value="forks" className="text-neutral-300">Sort: Forks</option>
             <option value="updated">Sort: Recently Updated</option>
           </select>
-          <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
+            <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none inset-shadow-md inset-shadow-blue-400 dark:text-neutral-300">
             <option value="desc">Desc</option>
             <option value="asc">Asc</option>
           </select>

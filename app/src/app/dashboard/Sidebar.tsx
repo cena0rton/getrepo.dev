@@ -91,7 +91,8 @@ const Sidebar = ({active, setActive }: SidebarProps) => {
             >
             {hovered === idx &&  <motion.span
             layoutId='underline'
-                  className="w-full h-full absolute rounded-lg bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 bottom-0 left-0"
+            transition={{ duration: 0.1, ease: "easeInOut" }}
+                  className="w-full h-full absolute rounded-lg bg-radial from-white to-neutral-200 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 bottom-0 left-0"
                   
                 />}
            <span  className={`relative z-10 $link.className(active) text-left py-3`}> {link.label}</span> 
