@@ -6,24 +6,24 @@ export default function BeginnersGuide() {
     <section id="guide" className="w-full h-screen overflow-y-auto">
       <div className="max-w-4xl mx-auto p-6 space-y-8">
         {/* Header */}
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+        <div className="text-left space-y-4">
+          <h1 className="text-4xl font-medium text-left tracking-tight text-neutral-900 dark:text-neutral-100">
             Beginner&apos;s Guide to Open Source
           </h1>
-          <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+          <p className="text-xl text-neutral-600 dark:text-neutral-400  mx-auto text-left">
             Your complete roadmap to making your first open source contribution and becoming part of the global developer community.
           </p>
-          <div className="flex items-center justify-center gap-2 text-sm text-neutral-500 dark:text-neutral-500">
-            <span>📅 Last updated: {new Date().toLocaleDateString()}</span>
+          <div className="flex items-center justify-start gap-2 text-sm text-neutral-500 dark:text-neutral-500 text-left">
+            <span> Last updated: {new Date().toLocaleDateString()}</span>
             <span>•</span>
-            <span>⏱️ 15 min read</span>
+            <span>⏱ 15 min read</span>
           </div>
         </div>
 
         {/* Table of Contents */}
-        <div className="bg-neutral-50 dark:bg-neutral-900 rounded-lg p-6 border border-neutral-200 dark:border-neutral-700">
-          <h2 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">📋 Table of Contents</h2>
-          <ul className="space-y-2 text-neutral-700 dark:text-neutral-300">
+        <div className="bg-linear-to-br from-blue-500/50 to-neutral-100/70 dark:bg-conic-90 dark:from-blue-500/50 dark:to-neutral-100/70 rounded-lg p-6 border border-neutral-200 dark:border-neutral-700">
+          <h2 className="text-xl font-medium mb-4 text-neutral-900 dark:text-neutral-100">Table of Contents</h2>
+          <ul className="space-y-2 text-neutral-700 tracking-tight dark:text-neutral-300">
             <li><a href="#what-is-open-source" className="hover:text-blue-600 dark:hover:text-blue-400">1. What is Open Source?</a></li>
             <li><a href="#why-contribute" className="hover:text-blue-600 dark:hover:text-blue-400">2. Why Contribute to Open Source?</a></li>
             <li><a href="#getting-started" className="hover:text-blue-600 dark:hover:text-blue-400">3. Getting Started</a></li>
@@ -36,7 +36,7 @@ export default function BeginnersGuide() {
 
         {/* What is Open Source */}
         <section id="what-is-open-source" className="space-y-4">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">1. What is Open Source? 🤔</h2>
+          <h2 className="text-3xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100">1. What is Open Source?</h2>
           <div className="prose prose-neutral dark:prose-invert max-w-none">
             <p className="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
               Open source software is software with source code that anyone can inspect, modify, and enhance. 
@@ -44,10 +44,10 @@ export default function BeginnersGuide() {
             </p>
             <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 my-6">
               <p className="text-blue-800 dark:text-blue-200 font-medium">
-                💡 <strong>Key Point:</strong> Open source isn&apos;t just about code - it&apos;s about community, collaboration, and shared knowledge.
+                 <strong>Key Point:</strong> Open source isn&apos;t just about code - it&apos;s about community, collaboration, and shared knowledge.
               </p>
             </div>
-            <h3 className="text-xl font-semibold mt-6 mb-3">Popular Open Source Projects:</h3>
+            <h3 className="text-xl font-medium mt-6 mb-3">Popular Open Source Projects:</h3>
             <ul className="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300">
               <li><strong>React</strong> - JavaScript library for building user interfaces</li>
               <li><strong>VS Code</strong> - Popular code editor</li>
@@ -60,7 +60,7 @@ export default function BeginnersGuide() {
 
         {/* Why Contribute */}
         <section id="why-contribute" className="space-y-4">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">2. Why Contribute to Open Source? 🚀</h2>
+          <h2 className="text-3xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100">2. Why Contribute to Open Source?</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-green-600 dark:text-green-400">Professional Benefits</h3>
@@ -109,7 +109,7 @@ export default function BeginnersGuide() {
 
         {/* Getting Started */}
         <section id="getting-started" className="space-y-4">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">3. Getting Started 🛠️</h2>
+          <h2 className="text-3xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100">3. Getting Started </h2>
           
           <div className="space-y-6">
             <div className="bg-neutral-50 dark:bg-neutral-900 rounded-lg p-6 border border-neutral-200 dark:border-neutral-700">
@@ -129,7 +129,7 @@ export default function BeginnersGuide() {
                   <p className="text-neutral-700 dark:text-neutral-300 mb-2">GitHub is the largest platform for open source projects.</p>
                   <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
                      className="inline-flex items-center gap-2 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 px-4 py-2 rounded hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors">
-                    <span>🐙</span>
+                   
                     <span>Sign up on GitHub</span>
                   </a>
                 </div>
