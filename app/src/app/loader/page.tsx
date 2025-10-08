@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Loader = () => {
   return (
-    <div className="flex justify-center items-center w-full h-screen relative">
+    <div className="flex justify-center items-center w-full h-vh relative">
         
         <motion.span
          className="size-6 border-1 border-neutral-200 rounded-full bg-linear-to-r from-neutral-300 to bg-neutral-400"
