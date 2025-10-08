@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Loader from "../components/ui/Loader";
+import SkeletonLoader from "../components/ui/SkeletonLoader";
 import Image from "next/image";
+
 
 type Repo = {
   id: number;
@@ -78,7 +79,11 @@ export default function Dash() {
     kotlin: "bg-pink-200/50 border-pink-200 text-pink-600 dark:bg-pink-900/40 dark:border-pink-700 dark:text-pink-200",
     swift: "bg-teal-200/50 border-teal-200 text-teal-600 dark:bg-teal-900/40 dark:border-teal-700 dark:text-teal-200",
     scala: "bg-green-200/50 border-green-200 text-green-600 dark:bg-green-900/40 dark:border-green-700 dark:text-green-200",
-    shell: "bg-gray-300/50 border-gray-300 text-gray-700 dark:bg-gray-800/40 dark:border-gray-700 dark:text-gray-200",
+    shell: "bg-gray-300/50 border-gray-300 text-neutral-500 dark:bg-gray-800/40 dark:border-gray-700 dark:text-gray-200",
+    "c#": "bg-violet-200/50 border-violet-200 text-violet-600 dark:bg-violet-900/40 dark:border-violet-700 dark:text-violet-200",
+    dart: "bg-sky-200/50 border-sky-200 text-sky-600 dark:bg-sky-900/40 dark:border-sky-700 dark:text-sky-200",
+  jupyternotebook: "bg-green-300/50 border-green-300 text-green-700 dark:bg-green-900/40 dark:border-green-700 dark:text-green-200",
+  css: "bg-gray-100/50 border-gray-200 text-gray-700 dark:bg-gray-900/40 dark:border-gray-700 dark:text-gray-200",
   };
 
   function getLanguageClass(language: string | null): string {
@@ -88,20 +93,21 @@ export default function Dash() {
   }
 
   return (
-    <div className="w-full h-screen   mx-auto p-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
+    <div className="w-full h-screen mx-auto p-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
      
      <div className="relative">
+     
         <div className="flex flex-col gap-4 ">
       
-      <h1 className="text-2xl font-medium tracking-tight">GitHub Repos</h1>
+      <h1 className="text-2xl font-medium tracking-tight">Search for <span className="text-blue-500">Repos</span> you want to contribute to</h1>
         <div className="grid grid-cols-1 md:grid-cols-[1fr_140px_140px_120px] gap-2">
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search (e.g. nextjs, express, typescript)"
-            className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800"
+            className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700"
           />
-          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300">
+          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700">
             <option value="" className="text-neutral-300">All languages</option>
             <option value="JavaScript">JavaScript</option>
             <option value="TypeScript">TypeScript</option>
@@ -114,30 +120,33 @@ export default function Dash() {
             <option value="PHP">PHP</option>
             <option value="Rust">Rust</option>
           </select>
-          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300">
+          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700">
             <option value="stars" className="text-neutral-300">Sort: Stars</option>
             <option value="forks" className="text-neutral-300">Sort: Forks</option>
             <option value="updated">Sort: Recently Updated</option>
           </select>
-            <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none inset-shadow-md inset-shadow-blue-400 dark:text-neutral-300">
+            <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none inset-shadow-md inset-shadow-blue-400 dark:text-neutral-300 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700">
             <option value="desc">Desc</option>
             <option value="asc">Asc</option>
           </select>
         </div>
+    
         </div>
       </div>
-      {loading && <Loader/>}
+
+
+      {loading && <SkeletonLoader/>}
       {error && <p className="text-red-600 dark:text-red-400">{error}</p>}
 
 
       
-      <div className=" h-screen scroll-smooth">
-        <table className="w-full text-sm text-neutral-800 dark:text-neutral-200">
-          <thead className="sticky top-0 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-100">
+     {!loading && !error && <div className=" h-screen scroll-smooth">
+        <table className="w-full text-sm text-neutral-800 dark:text-neutral-200 border-1 border-neutral-200/50 dark:border-neutral-700/50 rounded-lg">
+          <thead className="sticky top-16 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-700">
             <tr className="text-left">
               <th className="py-4 px-2">Repository</th>
               <th className="py-2 px-2">Language</th>
-              <th className="py-2 px-2">Tags</th>
+              <th className="py-2 px-2 text-center">Tags</th>
               <th className="py-2 px-2">Stars</th>
               <th className="py-2 px-2">Issues</th>
               <th className="py-2 px-2">Forks</th>
@@ -159,22 +168,22 @@ export default function Dash() {
                       />
                     )}
                     <div>
-                    <a href={r.html_url} target="_blank" rel="noreferrer" className="font-medium underline group-hover">
+                    <a href={r.html_url} target="_blank" rel="noreferrer" className="font-medium group-hover">
                       {r.full_name}
                     </a>
-                    {r.description && <div className="text-neutral-600 dark:text-neutral-400 text-xs max-w-xl mt-0.5">{r.description}</div>}
+                    {r.description && <div className="text-neutral-600 dark:text-neutral-400 text-xs max-w-xl mt-0.5">{r.description.slice(0, 100)}...</div>}
                     </div>
                   </div>
                   
                 </td>
                 <td className="py-2 px-2  max-w-20">
-                  <span className={`rounded-xl px-2 border-1 ${getLanguageClass(r.language)}`}>
+                  <span className={`rounded-xl px-2 py-1 border-1 ${getLanguageClass(r.language)}`}>
                     {r.language || "Unknown"}
                   </span>
                 </td>
                 <td className="py-2 px-2 max-w-[24ch]">
                   <div className="flex flex-wrap gap-1">
-                    {(r.topics || []).slice(0, 4).map((t) => (
+                    {(r.topics || []).slice(0, 3).map((t) => (
                       <span key={t} className="px-2 py-0.5 rounded-full border text-xs border-neutral-200 dark:border-neutral-700">
                         {t}
                       </span>
@@ -196,31 +205,36 @@ export default function Dash() {
 
 
 
-        <div className="sticky bottom-0 flex items-center justify-between p-3  w-full backdrop-blur-lg">
+        <div className="sticky bottom-0 flex items-center justify-between px-3 py-2  w-full backdrop-blur-lg">
           <div className="text-xs text-neutral-600 dark:text-neutral-400">
             Page {page} · Showing {repos.length} of {total.toLocaleString()} results
           </div>
           <div className="flex gap-2">
             <button
-              className="border rounded px-3 py-1 disabled:opacity-50"
+              className="border border-neutral-200 dark:border-neutral-700 rounded px-3 py-1 disabled:opacity-50"
               onClick={() => setPage((p) => Math.max(1, p - 1))}
               disabled={page <= 1 || loading}
             >
+
+              
               Prev
             </button>
             <button
-              className="border rounded px-3 py-1 disabled:opacity-50"
+              className="border group border-neutral-200 dark:border-neutral-700 rounded px-3 py-1 disabled:opacity-50"
               onClick={() => {
                 setPage((p) => p + 1);
                
               }}
               disabled={loading || repos.length < perPage}
             >
+              <span className="flex items-center gap-2 text-base">
               Next
+              <svg  xmlns="http://www.w3.org/2000/svg"  width={24}  height={20}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7l5 5l-5 5" /><path d="M13 7l5 5l-5 5" className="rotate-180 group-hover:rotate-0 transition-all duration-300"  /></svg>
+              </span>
             </button>
           </div>
         </div>
-      </div>
+      </div>}
       
     </div>
   );

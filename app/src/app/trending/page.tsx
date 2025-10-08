@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Loader from "../components/ui/Loader";
+import SkeletonLoader from "../components/ui/SkeletonLoader";
 import Image from "next/image";
 export const dynamic = "force-dynamic";
 
@@ -95,7 +95,7 @@ export default function TrendingPage() {
         <h1 className="text-2xl font-medium tracking-tight">Trending Repositories</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-[140px_140px_120px] gap-2">
-          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
+          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
             <option value="">All languages</option>
             <option value="JavaScript">JavaScript</option>
             <option value="TypeScript">TypeScript</option>
@@ -108,24 +108,24 @@ export default function TrendingPage() {
             <option value="PHP">PHP</option>
             <option value="Rust">Rust</option>
           </select>
-          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
+          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
             <option value="stars">Sort: Stars</option>
             <option value="forks">Sort: Forks</option>
             <option value="updated">Sort: Recently Updated</option>
           </select>
-          <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-radial from-neutral-50 to-neutral-300 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 outline-none">
+          <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
             <option value="desc">Desc</option>
             <option value="asc">Asc</option>
           </select>
         </div>
 
-        {loading && <Loader/>}
+        {loading && <SkeletonLoader/>}
         {error && <p className="text-red-600 dark:text-red-400">{error}</p>}
 
         {!loading && !error && (
           <div className="h-screen scroll-smooth">
-            <table className="w-full text-sm text-neutral-800 dark:text-neutral-200">
-              <thead className="sticky top-0 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-100">
+            <table className="w-full text-sm text-neutral-800 dark:text-neutral-200 border-1 border-neutral-200/50 dark:border-neutral-700/50 rounded-lg ">
+              <thead className="sticky top-0 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-700">
                 <tr className="text-left">
                   <th className="py-4 px-2">Repository</th>
                   <th className="py-2 px-2">Language</th>
