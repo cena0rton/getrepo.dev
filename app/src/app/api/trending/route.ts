@@ -6,6 +6,8 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const language = searchParams.get("language");
+    const sort = searchParams.get("sort") || "stars";
+    const order = searchParams.get("order") || "desc";
     const perPage = searchParams.get("per_page") || "50";
     // Trending approximation: repos with many stars created in last 14 days
     const since = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000)
@@ -22,8 +24,8 @@ export async function GET(request: Request) {
 
     const url = new URL(`${GITHUB_API}/search/repositories`);
     url.searchParams.set("q", qualifiers);
-    url.searchParams.set("sort", "stars");
-    url.searchParams.set("order", "desc");
+    url.searchParams.set("sort", sort);
+    url.searchParams.set("order", order);
     url.searchParams.set("per_page", perPage);
 
     const headers: Record<string, string> = { Accept: "application/vnd.github+json" };
