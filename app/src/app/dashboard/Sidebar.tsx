@@ -76,15 +76,15 @@ const sidebarLinks = [
 
 const Sidebar = ({active, setActive }: SidebarProps) => {
 
-  const [hovered, setHovered] = useState<number | null>(null);
+ 
   const [hovered2, setHovered2] = useState<number | null>(null);
 
   return (
     <div>
-      <div className="w-60 sticky left-0 border-r border-neutral-100 dark:border-neutral-800 h-screen flex flex-col items-start p-4">
+      <div className="w-60 sticky left-0 border-r bg-neutral-50 dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 h-screen flex flex-col items-start p-4">
        
-
-        <nav className=" flex flex-col py-2 w-full">
+<div className="relative h-full">
+        <nav className=" flex flex-col justify-between py-2 w-full relative">
        
 
 <p className='text-sm text-neutral-500 dark:text-neutral-400 mb-3'>General</p>
@@ -107,7 +107,15 @@ const Sidebar = ({active, setActive }: SidebarProps) => {
            <span  className={`relative z-10 $link.className(active) text-sm text-left py-3 dark:text-neutral-300 text-neutral-700 flex items-center gap-2 group-hover:px-2 transition-all duration-300`}><span className='group-hover:scale-120 transition-all duration-300 hover:text-blue-500'>{link.svg}</span> {link.label}</span> 
             </button>
           ))}
+          
+          
         </nav>
+        <div className='absolute bottom-0 left-0 rounded-md bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 py-2 w-50 mb-16 flex items-center justify-start pl-2'>
+          <p className="text-red-400 text-shadow-sm">Logout</p>
+
+        </div>
+
+        </div>
       </div>
     </div>
   )
