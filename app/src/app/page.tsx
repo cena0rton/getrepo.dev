@@ -1,5 +1,5 @@
 
-import Link from "next/link";
+
 import Page from "./dashboard/page";
 
 export default function Home() {

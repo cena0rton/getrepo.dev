@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Link from 'next/link'
+
 import Sidebar from './Sidebar'
 import Dash from './Dash'
 import TrendingPage from '../trending/page'
@@ -21,17 +21,7 @@ const [active, setActive] = React.useState<string>("base")
         <div  className="flex items-center justify-center gap-2">
           <ThemeSwitcher />
           
-          <Link href="/signin">
-            <button className="text-sm text-neutral-900 dark:text-neutral-100 px-4 border border-neutral-200 dark:border-neutral-700 rounded-md py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 flex items-center gap-2 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-login">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-4"/>
-                <path d="M10 17l5 -5l-5 -5"/>
-                <path d="M15 12h-12"/>
-              </svg>
-              Sign In
-            </button>
-          </Link>
+     
 
         <a href="https://github.com/cena0rton/getrepo.dev" target='_blank' rel='noopener noreferrer'><button
           className="text-sm text-neutral-900 dark:text-neutral-100 px-4 border border-neutral-200 
@@ -53,7 +43,7 @@ const [active, setActive] = React.useState<string>("base")
         </div>
 
     
-        <div className='px-2 pl-[240px] '>
+        <div className='px-2 md:pl-[240px] '>
          {active === "base" && <Dash />}
          {active === "trending" && <TrendingPage/>}
          {active === "Guide" && <BeginnersGuide/>}

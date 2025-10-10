@@ -10,38 +10,37 @@ export default function SignInPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900 flex items-center justify-center p-4">
+    <div className="min-h-screen z-10 relative flex items-center justify-center p-4 backdrop-blur-xl">
+
+      <div className="min-h-screen opacity-20 absolute inset-0 bg-conic-47 from-blue-200 via-blue-500 via-10% to-blue-900 flex items-center justify-center p-4"></div>
+      <div className="min-h-screen opacity-20 absolute inset-0 -bg-conic-47 from-blue-900 via-blue-500 via-10% to-blue-200 flex items-center justify-center p-4"></div>
+      <div className="min-h-screen opacity-20 absolute inset-0 bg-conic-125 from-blue-900 via-blue-500 via-10% to-blue-200 flex items-center justify-center p-4"></div>
+      <div className="min-h-screen opacity-20 absolute inset-0 -bg-conic-125 from-blue-200 via-blue-500 via-10% to-blue-900 flex items-center justify-center p-4"></div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="w-full max-w-md"
+        className="w-full max-w-md relative z-10"
       >
         {/* Logo/Brand */}
-        <div className="text-center mb-8">
-          <motion.div
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl mb-4 shadow-lg"
-          >
-            <span className="text-2xl font-bold text-white">GR</span>
-          </motion.div>
-          <h1 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-2">
-            Welcome to getRepo
-          </h1>
-          <p className="text-neutral-600 dark:text-neutral-400">
-            Sign in to discover amazing open source projects
-          </p>
-        </div>
+  
 
         {/* Sign In Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-700 p-8"
+          className="bg-white dark:bg-neutral-800 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-8 shadow-[inset_0px_10px_10px_rgba(0,0,255,0.5)]"
         >
+                <div className="text-center mb-8">
+
+<h1 className="text-3xl font-medium tracking-tight text-neutral-900 text-shadow-sm dark:text-neutral-100 mb-2">
+  Welcome to getRepo
+</h1>
+<p className="text-neutral-600 dark:text-neutral-400">
+  Sign in to discover amazing open source projects
+</p>
+</div>
           <div className="space-y-6">
             {/* Google Sign In Button */}
             <motion.button
