@@ -15,7 +15,7 @@ const sidebarLinks = [
     className: (active: string) =>
       `text-neutral-700 dark:text-neutral-300  rounded w-full text-left ${
         active === "base"
-          ? "bg-radial from-white to-neutral-200 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 px-2 "
+          ? "bg-radial from-neutral-100 to-white dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 pl-2 "
           : ""
       }`,
     ariaCurrent: "page" as const,
@@ -30,7 +30,7 @@ const sidebarLinks = [
     className: (active: string) =>
       `text-neutral-700 dark:text-neutral-300 rounded w-full text-left ${
         active === "trending"
-          ? "bg-radial from-white to-neutral-200 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 px-2"
+          ? "bg-radial from-neutral-100 to-white dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 pl-2 "
           : ""
       }`,
     ariaCurrent: undefined,
@@ -45,7 +45,7 @@ const sidebarLinks = [
     className: (active: string) =>
       `text-neutral-700 dark:text-neutral-300  rounded   w-full text-left ${
         active === "tech"
-          ? "bg-radial from-white to-neutral-200 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 px-2"
+          ? "bg-radial from-neutral-100 to-white dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 pl-2 "
           : ""
       }`,
     ariaCurrent: undefined,
@@ -60,7 +60,7 @@ const sidebarLinks = [
     className: (active: string) =>
       `text-neutral-700 dark:text-neutral-300  rounded   w-full text-left ${
         active === "Design"
-          ? "bg-radial from-white to-neutral-200 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 px-2"
+          ? "bg-radial from-neutral-100 to-white dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 pl-2 "
           : ""
       }`,
       svg:(active: string) => (<svg  xmlns="http://www.w3.org/2000/svg"  width={16}  height={16}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className={`icon icon-tabler icons-tabler-outline icon-tabler-help-square-rounded stroke-2
@@ -74,7 +74,7 @@ const sidebarLinks = [
     className: (active: string) =>
       `text-neutral-700 dark:text-neutral-300  rounded   w-full text-left ${
         active === "Guide"
-          ? "bg-radial from-white to-neutral-200 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 px-2"
+          ? "bg-radial from-neutral-100 to-white dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 pl-2 "
           : ""
       }`,
       svg: (active: string) => (<svg  xmlns="http://www.w3.org/2000/svg"  width={16}  height={16}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className={`icon icon-tabler icons-tabler-outline icon-tabler-help-square-rounded stroke-2
@@ -111,7 +111,7 @@ const Sidebar = ({ active, setActive }: SidebarProps) => {
             {hovered2 === idx &&  <motion.span
             layoutId='underline2'
             transition={{ duration: 0.1, ease: "easeInOut" }}
-                  className="w-full h-full mt-10 absolute rounded-lg bg-radial from-white to-neutral-200 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 bottom-0 left-0"
+                  className="w-full h-full mt-10 absolute rounded-lg bg-radial from-neutral-100 to-neutral-50 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 bottom-0 left-0"
                 />}
 
            <span  className={`relative z-10 ${link.className(active)} text-sm text-left py-3 dark:text-neutral-300 text-neutral-700 flex items-center gap-2 group-hover:px-2 transition-all duration-300`}><span className='group-hover:scale-120 transition-all duration-300 hover:text-blue-500'>{typeof link.svg === 'function' ? link.svg(active) : link.svg}</span> {link.label}</span> 
