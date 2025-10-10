@@ -74,7 +74,7 @@ const sidebarLinks = [
 ]
 
 
-const Sidebar = ({active, setActive }: SidebarProps) => {
+const Sidebar = ({ active, setActive }: SidebarProps) => {
 
  
   const [hovered2, setHovered2] = useState<number | null>(null);
@@ -93,7 +93,7 @@ const Sidebar = ({active, setActive }: SidebarProps) => {
               key={link.key}
               type="button"
               onClick={link.onClick(setActive)}
-              className={`relative $link.className(active) text-left px-2 group`}
+              className={`relative ${link.className(active)} text-left px-2 group`}
               aria-current={link.ariaCurrent}
               onMouseEnter={() => setHovered2(idx)}
               onMouseLeave={() => setHovered2(null)}
@@ -104,7 +104,7 @@ const Sidebar = ({active, setActive }: SidebarProps) => {
                   className="w-full h-full absolute rounded-lg bg-radial from-white to-neutral-200 dark:bg-radial dark:from-neutral-700 dark:to-neutral-900 bottom-0 left-0"
                 />}
 
-           <span  className={`relative z-10 $link.className(active) text-sm text-left py-3 dark:text-neutral-300 text-neutral-700 flex items-center gap-2 group-hover:px-2 transition-all duration-300`}><span className='group-hover:scale-120 transition-all duration-300 hover:text-blue-500'>{link.svg}</span> {link.label}</span> 
+           <span  className={`relative z-10 ${link.className(active)} text-sm text-left py-3 dark:text-neutral-300 text-neutral-700 flex items-center gap-2 group-hover:px-2 transition-all duration-300`}><span className='group-hover:scale-120 transition-all duration-300 hover:text-blue-500'>{link.svg}</span> {link.label}</span> 
             </button>
           ))}
           
