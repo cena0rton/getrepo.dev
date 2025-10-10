@@ -323,14 +323,14 @@ export default function Dash() {
             </div>
             <div className="flex gap-2">
               <button
-                className="border border-neutral-200 dark:border-neutral-700 rounded px-3 py-1 disabled:opacity-50"
+                className="border border-neutral-200 dark:border-neutral-700 rounded md:px-3 md:py-1 px-2 py-0 disabled:opacity-50"
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
                 disabled={page <= 1 || loading}
               >
                 Prev
               </button>
               <button
-                className="border group border-neutral-200 dark:border-neutral-700 rounded px-3 py-1 disabled:opacity-50"
+                className="border group border-neutral-200 dark:border-neutral-700 rounded  md:px-3 md:py-1 px-2 py-0 disabled:opacity-50"
                 onClick={() => {
                   setPage((p) => p + 1);
                 }}
@@ -339,6 +339,7 @@ export default function Dash() {
                 <span className="flex items-center gap-2 text-base">
                   Next
                   <svg
+                 
                     xmlns="http://www.w3.org/2000/svg"
                     width={24}
                     height={20}
@@ -348,7 +349,7 @@ export default function Dash() {
                     strokeWidth={2}
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-right"
+                    className="hidden md:block icon icon-tabler icons-tabler-outline icon-tabler-chevrons-right"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M7 7l5 5l-5 5" />

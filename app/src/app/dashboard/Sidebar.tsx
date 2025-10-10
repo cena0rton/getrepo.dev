@@ -94,7 +94,7 @@ const Sidebar = ({ active, setActive, children}: SidebarProps) => {
   return (
     <div>
 
-      <div className="w-60 sticky left-0 border-r bg-neutral-50 dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 h-screen flex flex-col items-start p-4">
+      <div className="md:w-60 w-full sticky left-0 border-r bg-neutral-50 dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 h-screen flex flex-col items-start p-4">
        
 <div className="relative h-full">
         <nav className=" flex flex-col justify-between py-2 w-full relative">
