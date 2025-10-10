@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 type SidebarProps = {
   active: string,
   setActive: React.Dispatch<React.SetStateAction<string>>;
+  ref?: React.RefObject<string | null>;
 };
 
 const sidebarLinks = [
@@ -84,7 +85,7 @@ const sidebarLinks = [
 ]
 
 
-const Sidebar = ({ active, setActive }: SidebarProps) => {
+const Sidebar = ({ active, setActive}: SidebarProps) => {
 
  
   const [hovered2, setHovered2] = useState<number | null>(null);

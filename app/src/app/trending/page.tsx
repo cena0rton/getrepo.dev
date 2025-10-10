@@ -125,7 +125,7 @@ export default function TrendingPage() {
         {!loading && !error && (
           <div className="h-screen scroll-smooth">
             <table className="w-full text-sm text-neutral-800 dark:text-neutral-200 border-1 border-neutral-200/50 dark:border-neutral-700/50 rounded-lg ">
-              <thead className="sticky top-0 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-700">
+              <thead className="sticky top-16 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-700">
                 <tr className="text-left">
                   <th className="py-4 px-2">Repository</th>
                   <th className="py-2 px-2">Language</th>

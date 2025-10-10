@@ -39,7 +39,7 @@ const [active, setActive] = React.useState<string>("base")
      
       
         <div className="hidden md:block fixed top-16 inset-y-0 left-0 w-[240px] z-20 bg-white dark:bg-neutral-900 border-r  border-neutral-100 dark:border-neutral-800">
-          <Sidebar active={active} setActive={setActive} />
+          <Sidebar active={active} setActive={setActive}  />
         </div>
 
     

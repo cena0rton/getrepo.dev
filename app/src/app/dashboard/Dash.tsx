@@ -157,19 +157,20 @@ export default function Dash() {
   }
 
   return (
-    <div className="w-full h-screen mx-auto p-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
+    <div className="w-full h-screen mx-auto py-4 md:px-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
       <div className="relative">
         <div className="flex flex-col gap-4 ">
           <h1 className="text-2xl font-medium tracking-tight">
             Search for <span className="text-blue-500">Repos</span> you want to contribute to
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_140px_140px_120px] gap-2">
+          <div className="flex flex-col items-center justify-between md:grid md:grid-cols-[1fr_140px_140px_120px] gap-2">
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search (e.g. nextjs, express, typescript)"
               className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700"
             />
+            <div className="flex justify-between md:grid md:grid-cols-[1fr_140px_140px_120px] gap-2 w-full mx-auto">
             <select
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
@@ -204,6 +205,7 @@ export default function Dash() {
               <option value="desc">Desc</option>
               <option value="asc">Asc</option>
             </select>
+            </div>
           </div>
         </div>
       </div>
@@ -246,14 +248,14 @@ export default function Dash() {
                           />
                         )}
                         <div>
-                          <a
+                          <Link
                             href={r.html_url}
                             target="_blank"
                             rel="noreferrer"
                             className="font-medium group-hover"
                           >
                             {r.full_name}
-                          </a>
+                          </Link>
                           {r.description && (
                             <div className="text-neutral-600 dark:text-neutral-400 text-xs max-w-xl mt-0.5">
                               {r.description.slice(0, 100)}...
