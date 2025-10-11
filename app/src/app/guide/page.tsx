@@ -3,8 +3,8 @@ import React from "react";
 
 export default function BeginnersGuide() {
   return (
-    <section id="guide" className="w-full h-screen overflow-y-auto">
-      <div className="max-w-4xl mx-auto p-6 space-y-8">
+    <section id="guide" className="w-full h-screen overflow-y-auto overflow-x-hidden">
+      <div className="md:max-w-4xl w-full mx-auto p-6 space-y-8 pt-16">
         {/* Header */}
         <div className="text-left space-y-4">
           <h1 className="text-4xl font-medium text-left tracking-tight text-neutral-900 dark:text-neutral-100">
