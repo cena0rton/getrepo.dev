@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import SkeletonLoader from "../components/ui/SkeletonLoader";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +20,10 @@ type Repo = {
 };
 
 export default function Dash() {
-  const [query, setQuery] = useState("");
+  const searchParams = useSearchParams();
+  const initialSearch = searchParams.get("search") || "";
+  
+  const [query, setQuery] = useState(initialSearch);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [repos, setRepos] = useState<Repo[]>([]);
@@ -31,6 +35,14 @@ export default function Dash() {
   const [total, setTotal] = useState<number>(0);
 
   const debouncedQuery = useDebouncedValue(query, 400);
+
+  // Update query when search param changes
+  useEffect(() => {
+    const urlSearch = searchParams.get("search") || "";
+    if (urlSearch !== query) {
+      setQuery(urlSearch);
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     let cancelled = false;
