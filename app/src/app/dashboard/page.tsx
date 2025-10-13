@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { Suspense } from 'react'
 
 import Sidebar from './Sidebar'
 import Dash from './Dash'
@@ -96,7 +96,11 @@ const [click, setClick] = React.useState<boolean>(false)
 
     
         <div className='px-2 md:pl-[240px] '>
-         {active === "base" && <Dash />}
+         {active === "base" && (
+           <Suspense fallback={<div className="w-full h-screen flex items-center justify-center">Loading...</div>}>
+             <Dash />
+           </Suspense>
+         )}
          {active === "trending" && <TrendingPage/>}
          {active === "tech" && <div>Tech</div>}
          {active === "Design" && <div>Design</div>}
