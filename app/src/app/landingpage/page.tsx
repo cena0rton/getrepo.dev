@@ -41,7 +41,7 @@ export default function Page() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder='Search for a project'
+              placeholder='Search example: react, nextjs, supabase..'
               className='w-full relative z-10 max-w-md p-4 rounded-tl-lg rounded-bl-lg border border-r-0 border-neutral-700 text-neutral-100 outline-none bg-neutral-800'
             />
             <div className='absolute z-0 inset-0 w-full max-w-lg h-full rounded-lg bg-[#6366f1] mx-auto p-4 blur-sm group-hover:blur-md transition-all duration-300 ' />
