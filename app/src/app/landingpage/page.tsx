@@ -44,7 +44,7 @@ export default function Page() {
               placeholder='Search example: react, nextjs, supabase..'
               className='w-full relative z-10 max-w-md p-4 rounded-tl-lg rounded-bl-lg border border-r-0 border-neutral-700 text-neutral-100 outline-none bg-neutral-800'
             />
-            <div className='absolute z-0 inset-0 w-full max-w-lg h-full rounded-lg bg-[#6366f1] mx-auto p-4 blur-sm group-hover:blur-md transition-all duration-300 ' />
+            <div className='absolute z-0 inset-0 w-full max-w-lg h-full rounded-lg animate-pulse bg-[#6366f1] mx-auto p-4 blur-sm group-hover:blur-md transition-all duration-300 ' />
             <button className='bg-neutral-800 p-4 cursor-pointer relative z-10 rounded-tr-lg rounded-br-lg border border-l-0 border-neutral-700'
             onClick={handleSearch}
             >
