@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 import { motion, stagger, delay } from 'motion/react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Page() {
   const router = useRouter()
@@ -24,6 +25,8 @@ export default function Page() {
     <div className="min-h-screen w-full relative">
       <div className='absolute top-4 right-4 text-sm text-neutral-500'><code>version 0.0.1</code></div>
       <div className='absolute top-4 left-4 text-sm text-neutral-500'><code className='flex items-center gap-2'> <Image src="/git-branch.svg" alt="Get Repo" width={16} height={16} className='animate-pulse bg-[#6366f1]' />development in progress</code></div>
+
+      <div className='absolute bottom-4 left-4 text-sm text-neutral-500'><code className='flex items-center gap-2'> Built by <a href="https://pawanm.xyz" target='_blank' className='text-[#6366f1]/60 cursor-pointer z-20'>cena0rton</a></code></div>
       {/* Radial Gradient Background */}
       <div className="absolute h-screen inset-0 z-0 bg-[radial-gradient(125%_125%_at_50%_100%,_#171c1f_40%,_#6366f1_70%)] blur-3xl" />
       {/* Your Content/Components */}
