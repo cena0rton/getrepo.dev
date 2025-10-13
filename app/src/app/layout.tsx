@@ -18,19 +18,40 @@ export const metadata: Metadata = {
       { url: "/git-branch.svg", type: "image/svg+xml" },
     ],
   },
-  title: "Get Repo",
+  title: "Get Repo | Your Comprehensive Guide to Open Source",
   description: "Discover and contribute to trending open source repositories with Get Repo — your comprehensive guide to finding projects, exploring codebases, and making impactful contributions in the global developer community.",
   openGraph: {
+    title: "Get Repo | Your Comprehensive Guide to Open Source",
+    description:
+      "Discover and contribute to trending open source repositories with Get Repo — your comprehensive guide to finding projects, exploring codebases, and making impactful contributions in the global developer community.",
     images: [
       {
         url: "/getrepo.webp",
         alt: "Get Repo logo",
         width: 1200,
         height: 630,
-        type: "image/webp"
-      }
-    ]
+        type: "image/webp",
+      },
+    ],
+    siteName: "Get Repo",
+    type: "website",
+    locale: "en_US",
+    url: "https://getrepo-dev.vercel.app",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@getrepodev",
+    title: "Get Repo | Your Comprehensive Guide to Open Source",
+    description:
+      "Discover and contribute to trending open source repositories with Get Repo — your comprehensive guide to finding projects, exploring codebases, and making impactful contributions in the global developer community.",
+    images: [
+      {
+        url: "/getrepo.webp",
+        alt: "Get Repo logo"
+      },
+    ],
+  },
+  metadataBase: new URL("https://getrepo-dev.vercel.app"),
 };
 
 export default function RootLayout({
@@ -45,7 +66,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
