@@ -124,7 +124,7 @@ export default function Dash() {
               href={r.html_url}
               target="_blank"
               rel="noreferrer"
-              className="font-medium break-all text-blue-600 dark:text-blue-400"
+              className="font-medium break-all text-[#6366f1] "
             >
               {r.full_name}
             </Link>
@@ -136,7 +136,7 @@ export default function Dash() {
           </div>
         </div>
         <div className="flex flex-wrap gap-x-3 gap-y-2 mt-2 text-xs">
-          <span className={`rounded-xl px-2 py-1 border-1 ${getLanguageClass(r.language)}`}>
+          <span className={`rounded-xl px-2 py-1 border-1 border-neutral-200/50 ${getLanguageClass(r.language)}`}>
             {r.language || "Unknown"}
           </span>
           {(r.topics || [])
@@ -144,7 +144,7 @@ export default function Dash() {
             .map((t) => (
               <span
                 key={t}
-                className="px-2 py-0.5 rounded-full border border-neutral-200 dark:border-neutral-700"
+                className="px-2 py-1 rounded-full border border-neutral-200 dark:border-neutral-700"
               >
                 {t}
               </span>
@@ -279,7 +279,7 @@ export default function Dash() {
                     </Link>
                   </td>
                   <td className="py-2 px-2  max-w-20">
-                    <span className={`rounded-xl px-2 py-1 border-1 ${getLanguageClass(r.language)}`}>
+                    <span className={`rounded-xl px-2 py-1 border-1 border-neutral-200/50 ${getLanguageClass(r.language)}`}>
                       {r.language || "Unknown"}
                     </span>
                   </td>

@@ -63,7 +63,7 @@ export default function BeginnersGuide() {
           <h2 className="text-3xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100">2. Why Contribute to Open Source?</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-green-600 dark:text-green-400">Professional Benefits</h3>
+              <h3 className="text-xl font-medium text-green-800 dark:text-green-400">Professional Benefits</h3>
               <ul className="space-y-2 text-neutral-700 dark:text-neutral-300">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 mt-1">✓</span>
@@ -84,7 +84,7 @@ export default function BeginnersGuide() {
               </ul>
             </div>
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">Personal Growth</h3>
+              <h3 className="text-xl font-medium text-blue-600 dark:text-blue-400">Personal Growth</h3>
               <ul className="space-y-2 text-neutral-700 dark:text-neutral-300">
                 <li className="flex items-start gap-2">
                   <span className="text-blue-500 mt-1">✓</span>
@@ -113,7 +113,7 @@ export default function BeginnersGuide() {
           
           <div className="space-y-6">
             <div className="bg-neutral-50 dark:bg-neutral-900 rounded-lg p-6 border border-neutral-200 dark:border-neutral-700">
-              <h3 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Step 1: Set Up Your Development Environment</h3>
+              <h3 className="text-xl font-medium mb-4 text-neutral-900 dark:text-neutral-100">Step 1: Set Up Your Development Environment</h3>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-medium text-neutral-800 dark:text-neutral-200 mb-2">Install Git</h4>
@@ -145,7 +145,7 @@ export default function BeginnersGuide() {
             </div>
 
             <div className="bg-neutral-50 dark:bg-neutral-900 rounded-lg p-6 border border-neutral-200 dark:border-neutral-700">
-              <h3 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Step 2: Learn the Basics</h3>
+              <h3 className="text-xl font-medium mb-4 text-neutral-900 dark:text-neutral-100">Step 2: Learn the Basics</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <h4 className="font-medium text-neutral-800 dark:text-neutral-200 mb-2">Essential Git Commands</h4>
@@ -174,44 +174,44 @@ export default function BeginnersGuide() {
 
         {/* Finding Projects */}
         <section id="finding-projects" className="space-y-4">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">4. Finding Your First Project 🔍</h2>
+          <h2 className="text-3xl font-medium text-neutral-900 dark:text-neutral-100">4. Finding Your First Project </h2>
           
           <div className="space-y-6">
-            <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-4">
-              <p className="text-yellow-800 dark:text-yellow-200 font-medium">
-                🎯 <strong>Pro Tip:</strong> Start with projects you already use or are interested in. This makes the contribution more meaningful and enjoyable.
+            <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 my-6">
+              <p className="text-blue-800 dark:text-blue-200 font-medium">
+                <strong>Pro Tip:</strong> Start with projects you already use or are interested in. This makes the contribution more meaningful and enjoyable.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">Where to Look</h3>
+                <h3 className="text-xl font-medium text-neutral-900 dark:text-neutral-100">Where to Look</h3>
                 <ul className="space-y-3 text-neutral-700 dark:text-neutral-300">
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl">🏷️</span>
+                    <span className="text-2xl"> &middot; </span>
                     <div>
-                      <strong>Good First Issue</strong>
+                      <p className="font-medium">Good First Issue</p>
                       <p className="text-sm text-neutral-600 dark:text-neutral-400">Issues specifically labeled for beginners</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl">🆕</span>
+                    <span className="text-2xl">&middot;</span>
                     <div>
-                      <strong>Hacktoberfest</strong>
+                      <p className="font-medium">Hacktoberfest</p>
                       <p className="text-sm text-neutral-600 dark:text-neutral-400">Annual event encouraging contributions</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl">📚</span>
+                    <span className="text-2xl">&middot;</span>
                     <div>
-                      <strong>Documentation</strong>
+                      <p className="font-medium">Documentation</p>
                       <p className="text-sm text-neutral-600 dark:text-neutral-400">Improve docs, fix typos, add examples</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-2xl">🐛</span>
+                    <span className="text-2xl">&middot;</span>
                     <div>
-                      <strong>Bug Fixes</strong>
+                      <p className="font-medium">Bug Fixes</p>
                       <p className="text-sm text-neutral-600 dark:text-neutral-400">Small, well-defined problems to solve</p>
                     </div>
                   </li>
@@ -219,7 +219,7 @@ export default function BeginnersGuide() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">What to Look For</h3>
+                <h3 className="text-xl font-medium text-neutral-900 dark:text-neutral-100">What to Look For</h3>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <span className="text-green-500">✓</span>
@@ -249,17 +249,17 @@ export default function BeginnersGuide() {
 
         {/* Making Contribution */}
         <section id="making-contribution" className="space-y-4">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">5. Making Your First Contribution 🎉</h2>
+          <h2 className="text-3xl font-medium text-neutral-900 dark:text-neutral-100">5. Making Your First Contribution </h2>
           
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 rounded-lg p-6 border border-blue-200 dark:border-blue-700">
-              <h3 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Complete Step-by-Step Process</h3>
+              <h3 className="text-xl font-medium mb-4 text-neutral-900 dark:text-neutral-100">Complete Step-by-Step Process</h3>
               
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
                   <div>
-                    <h4 className="font-semibold text-neutral-900 dark:text-neutral-100 mb-2">Fork the Repository</h4>
+                    <h4 className="font-medium text-neutral-900 dark:text-neutral-100 mb-2">Fork the Repository</h4>
                     <p className="text-neutral-700 dark:text-neutral-300 mb-2">Click the &quot;Fork&quot; button on the project&apos;s GitHub page to create your own copy.</p>
                     <div className="bg-neutral-800 text-green-400 p-3 rounded font-mono text-sm">
                       <code># This creates a copy in your GitHub account</code>
@@ -343,11 +343,11 @@ export default function BeginnersGuide() {
 
         {/* Best Practices */}
         <section id="best-practices" className="space-y-4">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">6. Best Practices 💡</h2>
+          <h2 className="text-3xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100">6. Best Practices </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-green-600 dark:text-green-400">Do&apos;s ✅</h3>
+              <h3 className="text-xl font-medium text-green-600 dark:text-green-400">Do&apos;s </h3>
               <ul className="space-y-3 text-neutral-700 dark:text-neutral-300">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 mt-1">✓</span>
@@ -377,7 +377,7 @@ export default function BeginnersGuide() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-red-600 dark:text-red-400">Don&apos;ts ❌</h3>
+              <h3 className="text-xl font-medium text-red-600 dark:text-red-400">Don&apos;ts </h3>
               <ul className="space-y-3 text-neutral-700 dark:text-neutral-300">
                 <li className="flex items-start gap-2">
                   <span className="text-red-500 mt-1">✗</span>
@@ -408,7 +408,7 @@ export default function BeginnersGuide() {
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 mt-6">
-            <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">💬 Writing Good Pull Requests</h4>
+            <h4 className="font-medium text-blue-800 dark:text-blue-200 mb-2">💬 Writing Good Pull Requests</h4>
             <ul className="text-blue-700 dark:text-blue-300 space-y-1 text-sm">
               <li>• Use a clear, descriptive title</li>
               <li>• Explain what your changes do and why</li>
@@ -421,7 +421,7 @@ export default function BeginnersGuide() {
 
         {/* Resources */}
         <section id="resources" className="space-y-4">
-          <h2 className="text-3xl font-bold text-neutral-900 dark:text-neutral-100">7. Additional Resources 📚</h2>
+          <h2 className="text-3xl font-medium text-neutral-900 dark:text-neutral-100">7. Additional Resources </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
@@ -473,20 +473,20 @@ export default function BeginnersGuide() {
         </section>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg p-8 text-center border border-green-200 dark:border-green-700">
-          <h3 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">Ready to Make Your First Contribution? 🚀</h3>
-          <p className="text-lg text-neutral-700 dark:text-neutral-300 mb-6">
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg p-8 text-center border border-green-200/20 dark:border-green-700/20">
+          <h3 className="text-2xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100 mb-4">Ready to Make Your First Contribution? 🚀</h3>
+          <p className="text-lg text-neutral-700 dark:text-neutral-300 mb-6 tracking-tight">
             Start your open source journey today! Remember, every expert was once a beginner.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://github.com/topics/good-first-issue" target="_blank" rel="noopener noreferrer" 
                className="inline-flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors">
-              <span>🔍</span>
+              <span></span>
               <span>Find Your First Issue</span>
             </a>
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
                className="inline-flex items-center gap-2 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 px-6 py-3 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors">
-              <span>🐙</span>
+              <span></span>
               <span>Explore GitHub</span>
             </a>
           </div>

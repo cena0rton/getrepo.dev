@@ -84,7 +84,7 @@ export default function TrendingPage() {
   };
 
   function getLanguageClass(language: string | null): string {
-    if (!language) return "bg-neutral-100 border-1 border-neutral-200 bg-neutral-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100";
+    if (!language) return "bg-neutral-100 border-1 border-neutral-200/50 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-100";
     const key = language.toLowerCase();
     return languageToClass[key] || "bg-neutral-100";
   }
@@ -109,7 +109,7 @@ export default function TrendingPage() {
               href={r.html_url}
               target="_blank"
               rel="noreferrer"
-              className="font-medium break-all text-blue-600 dark:text-blue-400"
+              className="font-medium break-all text-[#6366f1]"
             >
               {r.full_name}
             </a>
@@ -121,7 +121,7 @@ export default function TrendingPage() {
           </div>
         </div>
         <div className="flex flex-wrap gap-x-3 gap-y-2 mt-2 text-xs">
-          <span className={`rounded-xl px-2 py-1 border-1 ${getLanguageClass(r.language)}`}>
+          <span className={`rounded-xl px-2 py-1 border-1 border-neutral-200/50 ${getLanguageClass(r.language)}`}>
             {r.language || "Unknown"}
           </span>
           {(r.topics || [])
@@ -129,7 +129,7 @@ export default function TrendingPage() {
             .map((t) => (
               <span
                 key={t}
-                className="px-2 py-0.5 rounded-full border border-neutral-200 dark:border-neutral-700"
+                className="px-2 py-1 rounded-full border border-neutral-200 dark:border-neutral-700"
               >
                 {t}
               </span>
@@ -229,7 +229,7 @@ export default function TrendingPage() {
                       </div>
                     </td>
                     <td className="py-2 px-2 max-w-20">
-                      <span className={`rounded-xl px-2 border-1 ${getLanguageClass(r.language)}`}>
+                      <span className={`rounded-xl px-2 py-1 border-1 border-neutral-200/50 ${getLanguageClass(r.language)}`}>
                         {r.language || "Unknown"}
                       </span>
                     </td>

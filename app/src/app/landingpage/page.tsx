@@ -22,7 +22,7 @@ export default function Page() {
   const text = "Contributing";
 
   return (
-    <div className="min-h-screen w-full relative">
+    <div className="min-h-screen w-full relative bg-[#0a0a0a]">
       <div className='absolute top-4 right-4 text-sm text-neutral-500'><code>version 0.0.1</code></div>
       <div className='absolute top-4 left-4 text-sm text-neutral-500'><code className='flex items-center gap-2'> <Image src="/git-branch.svg" alt="Get Repo" width={16} height={16} className='animate-pulse bg-[#6366f1]' />development in progress</code></div>
 
