@@ -13,8 +13,24 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
+  icons: {
+    icon: [
+      { url: "/git-branch.svg", type: "image/svg+xml" },
+    ],
+  },
   title: "Get Repo",
-  description: "Ace open source with getRepo",
+  description: "Discover and contribute to trending open source repositories with Get Repo — your comprehensive guide to finding projects, exploring codebases, and making impactful contributions in the global developer community.",
+  openGraph: {
+    images: [
+      {
+        url: "/getrepo.webp",
+        alt: "Get Repo logo",
+        width: 1200,
+        height: 630,
+        type: "image/webp"
+      }
+    ]
+  },
 };
 
 export default function RootLayout({
