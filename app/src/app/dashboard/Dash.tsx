@@ -120,14 +120,14 @@ export default function Dash() {
             />
           )}
           <div className="flex-1">
-            <a
+            <Link
               href={r.html_url}
               target="_blank"
               rel="noreferrer"
               className="font-medium break-all text-blue-600 dark:text-blue-400"
             >
               {r.full_name}
-            </a>
+            </Link>
             {r.description && (
               <div className="text-neutral-600 dark:text-neutral-400 text-xs mt-0.5 line-clamp-2">
                 {r.description}
@@ -230,6 +230,7 @@ export default function Dash() {
         <div className="h-screen scroll-smooth">
           {/* Hide table on screens < md, show on md+ */}
           <table className="w-full text-sm text-neutral-800 dark:text-neutral-200 border-1 border-neutral-200/50 dark:border-neutral-700/50 rounded-lg hidden md:table">
+          
             <thead className="sticky top-16 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-700">
               <tr className="text-left">
                 <th className="py-4 px-2">Repository</th>
