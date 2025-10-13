@@ -161,7 +161,7 @@ export default function Dash() {
       <div className="relative">
         <div className="flex flex-col gap-4 ">
           <h1 className="text-2xl font-medium tracking-tight">
-            Search for <span className="text-blue-500">Repos</span> you want to contribute to
+            Search for <span className="text-[#6366f1]">Repos</span> you want to contribute to
           </h1>
           <div className="flex flex-col items-center justify-between md:grid md:grid-cols-[1fr_140px_140px_120px] gap-2">
             <input

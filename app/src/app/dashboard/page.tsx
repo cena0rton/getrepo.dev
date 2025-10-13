@@ -18,7 +18,7 @@ const [click, setClick] = React.useState<boolean>(false)
 
 <div className='fixed z-20 top-0 w-full h-16 bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 flex items-center justify-between px-4'>
         <div className="flex items-center gap-4">
-          <h1 className='text-2xl font-medium tracking-tight text-neutral-900 text-shadow-sm dark:text-neutral-100 text-left'>getRepo<span className='text-blue-500'>.dev</span></h1>
+          <h1 className='text-2xl font-medium tracking-tight text-neutral-900 text-shadow-sm dark:text-neutral-100 text-left'>getRepo<span className='text-[#6366f1]'>.dev</span></h1>
         
         </div>
 
@@ -31,7 +31,7 @@ const [click, setClick] = React.useState<boolean>(false)
      exit={{ opacity: 0, rotate: -180 }}
      transition={{ duration: 0.3, ease: "easeInOut" }}
      layoutId='menu-icon'
-     xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="none"  strokeWidth={1}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 stroke-1 stroke-blue-600 "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></motion.svg>
+     xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="none"  strokeWidth={1}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 stroke-1 stroke-[#6366f1] "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></motion.svg>
 }
 
 {
@@ -41,7 +41,7 @@ const [click, setClick] = React.useState<boolean>(false)
     exit={{ opacity: 0, rotate: -180 }}
     transition={{ duration: 0.3, ease: "easeInOut" }}
     layoutId='menu-icon'
-    xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-x stroke-2 stroke-blue-500 "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></motion.svg>
+    xmlns="http://www.w3.org/2000/svg"  width={24}  height={24}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-x stroke-2 stroke-[#6366f1] "><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></motion.svg>
 }
 </div>
 {click &&<AnimatePresence>

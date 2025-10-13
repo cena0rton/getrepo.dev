@@ -157,10 +157,10 @@ export default function TrendingPage() {
     <section id="trending">
       <div className="w-full h-screen mx-auto py-4 md:px-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
        
-      <h1 className="md:hidden text-2xl font-medium tracking-tight text-left">Top 50 <span className="text-blue-500">Trending Repositories</span> on Github</h1>
+      <h1 className="md:hidden text-2xl font-medium tracking-tight text-left">Top 50 <span className="text-[#6366f1]">Trending Repositories</span> on Github</h1>
         <div className="flex md:justify-between justify-start items-center gap-2">
           <div className="hidden md:block">
-        <h1 className=" text-2xl font-medium tracking-tight">Top 50 <span className="text-blue-500">Trending Repositories</span> on Github</h1>
+        <h1 className=" text-2xl font-medium tracking-tight">Top 50 <span className="text-[#6366f1]">Trending Repositories</span> on Github</h1>
         </div>
         <div className="flex gap-2">
           <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
