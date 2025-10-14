@@ -33,7 +33,7 @@ export default function Page() {
       <div className='relative z-10 px-2'>
         <div className='flex flex-col max-w-4xl items-center justify-center h-screen mx-auto'>
           <h1 className='lg:text-7xl/20 text-4xl/12 text-neutral-100 font-medium tracking-tight text-center  mx-auto'>
-            Start <span className='text-[#8ff47b] w-full relative p-1 bg-violet-500/10'>
+            Start <span className='text-[#83f77d] w-full relative p-1 bg-violet-500/10'>
 
 
               <span className="rounded-full animate-pulse size-2 -translate-x-0.5 -translate-y-0.5 absolute -top-0.5 -left-0.5 bg-[#6366f1]"></span>
@@ -45,7 +45,7 @@ export default function Page() {
                 <motion.span 
                 key={idx}
                 className="inline-block"
-                initial={{ y: 20, opacity: 0 }}
+                initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: idx * 0.05, type: "spring", stiffness: 200 , duration: 2 }}>{word}</motion.span>
               )}

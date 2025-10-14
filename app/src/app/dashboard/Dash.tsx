@@ -180,7 +180,7 @@ export default function Dash() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search (e.g. nextjs, express, typescript)"
-              className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700"
+              className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-200 dark:border-neutral-700 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700 focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-700 transition-all duration-100 "
             />
             <div className="flex justify-between md:grid md:grid-cols-[1fr_140px_140px_120px] gap-2 w-full mx-auto">
             <select
