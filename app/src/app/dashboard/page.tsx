@@ -8,6 +8,7 @@ import BeginnersGuide from '../guide/page'
 import ThemeSwitcher from '../../components/ThemeSwitcher'
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
+import Soon from './Soon'
 
 const Page = () => {
 
@@ -102,8 +103,8 @@ const [click, setClick] = React.useState<boolean>(false)
            </Suspense>
          )}
          {active === "trending" && <TrendingPage/>}
-         {active === "tech" && <div>Tech</div>}
-         {active === "Design" && <div>Design</div>}
+         {active === "tech" && <Soon/>}
+         {active === "Design" && <Soon/>}
          {active === "Guide" && <BeginnersGuide/>}
         </div>
         
