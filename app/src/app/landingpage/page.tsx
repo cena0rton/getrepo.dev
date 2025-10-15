@@ -11,6 +11,7 @@ export default function Page() {
   
   const handleSearch = () => {
     router.push(`/dashboard?search=${search}`)
+    setClick(true)
   }
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -20,6 +21,7 @@ export default function Page() {
   }
 
   const text = "Contributing";
+  const [click, setClick] = useState(false)
 
   return (
     <div className="min-h-screen w-full relative bg-[#0a0a0a]">
@@ -78,15 +80,15 @@ export default function Page() {
           <motion.button
           initial={{ x: 15, y:15
            }}
-          animate={{ x: 0, y: 0, transition:{ duration: 2, type: "spring", stiffness: 500, damping: 10 } }}
-          whileHover={{ x: 5, y: 5 }}
-          whileTap={{ x: 5, y: 5 }}
-          whileFocus={{ x: 2, y: 2 }}
-          transition={{ duration: 0.3, ease: "easeInOut", type: "spring", stiffness: 500, damping: 10 }}
-          className='bg-linear-to-r absolute inset-0 z-20 font-medium from-[#5456f3] via-50% via-[#8789db] to-90% to-[#5456f3] px-4 py-2 cursor-pointer rounded-lg text-neutral-300 h-10 w-32 text-shadow-md text-shadow-neutral-500'
-        onClick={() => router.push('/dashboard')}
+          animate={{ x: 0, y: 0, transition:{ duration: 3, type: "spring", stiffness: 300, damping: 10 } }}
+          whileHover={{ x: 5, y: 5, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
+          whileTap={{ x: 5, y: 5, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
+          whileFocus={{ x: 2, y: 2, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
+         
+          className='bg-linear-to-r absolute inset-0 z-20 font-medium from-[#5456f3] via-50% via-[#8789db] to-90% to-[#5456f3] px-4 py-2 cursor-pointer rounded-lg text-neutral-300  text-shadow-md text-shadow-neutral-500'
+        onClick={() => {router.push('/dashboard'), setClick(true)}}
         >
-          Get Started
+          {click ? "Starting..." : "Get Started"}
           
      </motion.button>
         </motion.div>
