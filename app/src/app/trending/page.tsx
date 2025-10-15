@@ -162,8 +162,8 @@ export default function TrendingPage() {
           <div className="hidden md:block">
         <h1 className=" text-2xl font-medium tracking-tight">Top 50 <span className="text-[#6366f1]">Trending Repositories</span> on Github</h1>
         </div>
-        <div className="flex gap-2">
-          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
+        <div className="flex gap-2 overflow-x-hidden">
+          <select value={language} onChange={(e) => setLanguage(e.target.value)} className="border border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
             <option value="">All languages</option>
             <option value="JavaScript">JavaScript</option>
             <option value="TypeScript">TypeScript</option>
@@ -176,12 +176,12 @@ export default function TrendingPage() {
             <option value="PHP">PHP</option>
             <option value="Rust">Rust</option>
           </select>
-          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
+          <select value={sort} onChange={(e) => setSort(e.target.value)} className="border w-36 md:w-full border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
             <option value="stars">Sort: Stars</option>
             <option value="forks">Sort: Forks</option>
             <option value="updated">Sort: Recently Updated</option>
           </select>
-          <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-200 dark:border-neutral-700 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
+          <select value={order} onChange={(e) => setOrder(e.target.value)} className="border border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none">
             <option value="desc">Desc</option>
             <option value="asc">Asc</option>
           </select>
