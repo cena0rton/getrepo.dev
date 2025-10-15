@@ -70,7 +70,31 @@ export default function Page() {
           <p className='text-neutral-500 text-center mx-auto md:text-lg text-base mt-8'>
             Your complete roadmap to making your first open <br/> source  contribution and becoming part of the global developer community.
           </p>
+
+          <motion.div className='flex items-center  justify-center gap-2 mt-8 group'>
+            <motion.div
+            className='h-10 w-32 relative z-10 inset-0 rounded-lg bg-neutral-400 [background-image:repeating-linear-gradient(135deg,_transparent,_transparent_1px,_#8789db_1px,_#6366f1_4px)] transition-all duration-300  backdrop-blur-[10px]'>
+         
+          <motion.button
+          initial={{ x: 15, y:15
+           }}
+          animate={{ x: 0, y: 0, transition:{ duration: 2, type: "spring", stiffness: 500, damping: 10 } }}
+          whileHover={{ x: 5, y: 5 }}
+          whileTap={{ x: 5, y: 5 }}
+          whileFocus={{ x: 2, y: 2 }}
+          transition={{ duration: 0.3, ease: "easeInOut", type: "spring", stiffness: 500, damping: 10 }}
+          className='bg-linear-to-r absolute inset-0 z-20 font-medium from-[#5456f3] via-50% via-[#8789db] to-90% to-[#5456f3] px-4 py-2 cursor-pointer rounded-lg text-neutral-300 h-10 w-32 text-shadow-md text-shadow-neutral-500'
+        onClick={() => router.push('/dashboard')}
+        >
+          Get Started
+          
+     </motion.button>
+        </motion.div>
+
+          </motion.div>
+          
         </div>
+       
       </div>
     </div>
   )
