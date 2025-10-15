@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 type SidebarProps = {
   active: string,
   setActive: React.Dispatch<React.SetStateAction<string>>;
@@ -90,19 +90,55 @@ const Sidebar = ({ active, setActive, children}: SidebarProps) => {
 
  
   const [hovered2, setHovered2] = useState<number | null>(null);
+  
+  // Animation variants for stagger effect
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1, // 0.1s delay between each child
+        delayChildren: 0.2     // 0.2s delay before starting
+      }
+    }
+  };
 
+  const itemVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: -20,
+      scale: 0.9
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: {
+        type: "spring" as const,
+        stiffness: 300,
+        damping: 24
+      }
+    }
+  };
   return (
     <div>
 
       <div className="md:w-60 w-full sticky left-0 border-r bg-neutral-50 dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 h-screen flex flex-col items-start p-4">
        
 <div className="relative h-full">
-        <nav className=" flex flex-col justify-between py-2 w-full relative">
+        <motion.nav 
+          className="flex flex-col justify-between py-2 w-full relative"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
        
 
 <p className='text-sm text-left px-2 text-neutral-500 dark:text-neutral-400 mb-3'>General</p>
           {sidebarLinks.map((link, idx) => (
-            <div key={link.key}>
+            <motion.div
+            key={link.key}
+            variants={itemVariants}>
             <button
               key={link.key}
               type="button"
@@ -119,11 +155,11 @@ const Sidebar = ({ active, setActive, children}: SidebarProps) => {
                 />}
 
            <span  className={`relative z-10 ${link.className(active)} text-sm text-left py-3 dark:text-neutral-300 text-neutral-700 flex items-center gap-2 group-hover:px-2 transition-all duration-300`}><span className='group-hover:scale-120 transition-all duration-300 hover:text-[#6366f1]'>{typeof link.svg === 'function' ? link.svg(active) : link.svg}</span> {link.label}</span> 
-            </button></div>
+            </button></motion.div>
           ))}
           
           {children}
-        </nav>
+        </motion.nav>
         <div className='absolute bottom-0 left-0 rounded-md bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-800 py-2 w-50 mb-16 flex items-center justify-start pl-2'>
           <p className="text-red-400 text-shadow-sm">Logout</p>
 

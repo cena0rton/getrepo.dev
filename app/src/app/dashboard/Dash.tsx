@@ -180,13 +180,13 @@ export default function Dash() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search (e.g. nextjs, express, typescript)"
-              className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-100 dark:border-neutral-800 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700 focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-700 transition-all duration-100 "
+              className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-100 dark:border-neutral-800 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-700 transition-all duration-100 "
             />
             <div className="flex justify-start items-center md:grid md:grid-cols-[1fr_140px_140px_120px] gap-2 w-full mx-auto md:overflow-x-visible">
             <select
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
-              className="border border-neutral-100 dark:border-neutral-900 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700"
+              className="border border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 "
             >
               <option value="" className="text-neutral-300">All languages</option>
               <option value="JavaScript">JavaScript</option>
@@ -203,7 +203,7 @@ export default function Dash() {
             <select
               value={sort}
               onChange={(e) => setSort(e.target.value)}
-              className="border border-neutral-100 dark:border-neutral-900 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700 w-36 md:w-full"
+              className="border border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300  w-36 md:w-full"
             >
               <option value="stars" className="text-neutral-300">Sort: Stars</option>
               <option value="forks" className="text-neutral-300">Sort: Forks</option>
@@ -212,7 +212,7 @@ export default function Dash() {
             <select
               value={order}
               onChange={(e) => setOrder(e.target.value)}
-              className="border border-neutral-100 dark:border-neutral-900 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none inset-shadow-md inset-shadow-blue-400 dark:text-neutral-300 ring-[0.5px] ring-neutral-200 dark:ring-neutral-700"
+              className="border-1 border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none inset-shadow-md inset-shadow-blue-400 dark:text-neutral-300 "
             >
               <option value="desc">Desc</option>
               <option value="asc">Asc</option>
