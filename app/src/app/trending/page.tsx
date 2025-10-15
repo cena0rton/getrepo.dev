@@ -92,7 +92,7 @@ export default function TrendingPage() {
   // Helper for repo cards (mobile)
   function RepoCard({ r }: { r: Repo }) {
     return (
-      <div className="border-1 border-neutral-200 dark:border-neutral-700 rounded-lg mb-3 p-4 bg-white dark:bg-neutral-900 shadow flex flex-col gap-2">
+      <div className="border-1 border-neutral-200 dark:border-[#6366f1]/20 rounded-lg mb-3 p-4 bg-white dark:bg-neutral-950 shadow flex flex-col gap-2">
         <div className="flex items-center gap-3">
           {r.owner?.avatar_url && (
             <Image
