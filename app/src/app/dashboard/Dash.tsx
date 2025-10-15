@@ -170,8 +170,8 @@ export default function Dash() {
 
   return (
     <div className="w-full h-screen mx-auto py-4 md:px-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
-      <div className="relative">
-        <div className="flex flex-col gap-4 ">
+      <div className="relative dark:bg-[#6366f1]/40 bg-[#6366f1]/40">
+        <div className="flex flex-col gap-4 dark:bg-neutral-900 bg-neutral-50 p-4 rounded-2xl border-1 border-[#6366f1]/30 dark:border-[#6366f1]/30">
           <h1 className="text-2xl font-medium tracking-tight">
             Search for <span className="text-[#6366f1]">Repos</span> you want to contribute to
           </h1>
@@ -180,13 +180,13 @@ export default function Dash() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search (e.g. nextjs, express, typescript)"
-              className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-neutral-100 dark:border-neutral-800 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 focus:ring-1 focus:ring-neutral-300 dark:focus:ring-neutral-700 transition-all duration-100 "
+              className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-[#6366f1]/40 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 focus:ring-1 focus:ring-neutral-300 dark:focus:ring-[#6366f1]/40 transition-all duration-100 "
             />
             <div className="flex justify-start items-center md:grid md:grid-cols-[1fr_140px_140px_120px] gap-2 w-full mx-auto md:overflow-x-visible">
             <select
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
-              className="border border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 "
+              className="border border-[#6366f1]/40 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 w-36 "
             >
               <option value="" className="text-neutral-300">All languages</option>
               <option value="JavaScript">JavaScript</option>
@@ -203,7 +203,7 @@ export default function Dash() {
             <select
               value={sort}
               onChange={(e) => setSort(e.target.value)}
-              className="border border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300  w-36 md:w-full"
+              className="border border-neutral-200 dark:border-[#6366f1]/40 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300  w-36 "
             >
               <option value="stars" className="text-neutral-300">Sort: Stars</option>
               <option value="forks" className="text-neutral-300">Sort: Forks</option>
@@ -212,7 +212,7 @@ export default function Dash() {
             <select
               value={order}
               onChange={(e) => setOrder(e.target.value)}
-              className="border-1 border-neutral-100 dark:border-neutral-800 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none inset-shadow-md inset-shadow-blue-400 dark:text-neutral-300 "
+              className="border-1 border-neutral-200 dark:border-[#6366f1]/40 rounded px-2 py-2 w-24 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none inset-shadow-md inset-shadow-blue-400 dark:text-neutral-300 "
             >
               <option value="desc">Desc</option>
               <option value="asc">Asc</option>
@@ -229,10 +229,10 @@ export default function Dash() {
       {!loading && !error && (
         <div className="h-screen scroll-smooth">
           {/* Hide table on screens < md, show on md+ */}
-          <table className="w-full text-sm text-neutral-800 dark:text-neutral-200 border-1 border-neutral-200/50 dark:border-neutral-700/50 rounded-lg hidden md:table">
+          <table className="w-full text-sm text-neutral-800 dark:text-neutral-200 border-1 border-neutral-200/50 dark:border-[#6366f1]/20 rounded-lg hidden md:table">
           
-            <thead className="sticky top-16 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border-b border-neutral-200 dark:border-neutral-700">
-              <tr className="text-left">
+            <thead className="sticky top-16 bg-white/80 dark:bg-neutral-900/60 backdrop-blur border border-neutral-200 dark:border-[#6366f1]/30">
+              <tr className="text-left text-[#a5a4a4]">
                 <th className="py-4 px-2">Repository</th>
                 <th className="py-2 px-2">Language</th>
                 <th className="py-2 px-2 text-center">Tags</th>
@@ -245,7 +245,7 @@ export default function Dash() {
               {repos.map((r) => (
                 <tr
                   key={r.id}
-                  className="border-b border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 group"
+                  className="border-b border-neutral-100 dark:border-[#6366f1]/20 hover:bg-neutral-50 dark:hover:bg-neutral-900 group"
                 >
                   <td className="py-6 px-2 max-w-sm">
                     <Link href={r.html_url} target="_blank" rel="noreferrer" key={r.id}>
@@ -265,7 +265,7 @@ export default function Dash() {
                             href={r.html_url}
                             target="_blank"
                             rel="noreferrer"
-                            className="font-medium group-hover"
+                            className="font-medium group-hover:text-[#6366f1] transition-colors transition-duration-300"
                           >
                             {r.full_name}
                           </Link>

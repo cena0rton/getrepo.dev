@@ -29,7 +29,7 @@ const ThemeSwitcher = () => {
         console.log('Setting theme to:', newTheme);
         setTheme(newTheme);
       }}
-      className="hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full p-1 border border-neutral-200 dark:border-neutral-700 transition-colors "
+      className="hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full p-1 border border-neutral-200 dark:border-[#6366f1]/40 transition-colors "
       title={currentTheme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
     >
       <AnimatePresence mode="wait">

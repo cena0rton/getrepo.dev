@@ -17,7 +17,7 @@ const [click, setClick] = React.useState<boolean>(false)
   return (
     <>
 
-<div className='fixed z-20 top-0 w-full h-16 bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 flex items-center justify-between px-4'>
+<div className='fixed z-20 top-0 w-full h-16 bg-neutral-50 dark:bg-neutral-950 border-b border-neutral-200 dark:border-[#6366f1]/30 flex items-center justify-between px-4'>
         <div className="flex items-center gap-4">
           <h1 className='text-xl md:text-2xl font-medium tracking-tight text-neutral-900 text-shadow-sm dark:text-neutral-100 text-left'>getRepo<span className='text-[#6366f1]'>.dev</span></h1>
         
@@ -81,7 +81,7 @@ const [click, setClick] = React.useState<boolean>(false)
     </button>
 
         <div  className="hidden md:flex items-center justify-center gap-2">
-          <ThemeSwitcher />
+          {/* <ThemeSwitcher /> */}
           
      
 
@@ -89,7 +89,7 @@ const [click, setClick] = React.useState<boolean>(false)
           className="text-sm text-neutral-900 dark:text-neutral-100 px-4 border border-neutral-200 
           text-shadow-xs
           dark:text-shadow-xs dark:text-shadow-neutral-200
-          dark:border-neutral-700 rounded-md py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 flex items-center gap-2 shadow-[inset_0_2px_8px_0_rgba(0,0,0,0.08)] dark:shadow-[inset_0_2px_8px_0_rgba(255,255,255,0.08)]"
+          dark:border-[#6366f1]/40 rounded-md py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 flex items-center gap-2 shadow-[inset_0_2px_8px_0_rgba(0,0,0,0.08)] dark:shadow-[inset_0_2px_8px_0_rgba(255,255,255,0.08)]"
         >
           <svg  xmlns="http://www.w3.org/2000/svg"  width={16}  height={16}  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth={2}  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> Github Code
         </button></Link>

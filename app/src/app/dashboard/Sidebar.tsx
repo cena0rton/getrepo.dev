@@ -123,7 +123,7 @@ const Sidebar = ({ active, setActive, children}: SidebarProps) => {
   return (
     <div>
 
-      <div className="md:w-60 w-full sticky left-0 border-r bg-neutral-50 dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800 h-screen flex flex-col items-start p-4">
+      <div className="md:w-60 w-full sticky left-0 border-r bg-neutral-50 dark:bg-neutral-950 border-neutral-200 dark:border-[#6366f1]/30 h-screen flex flex-col items-start p-4">
        
 <div className="relative h-full">
         <motion.nav 
