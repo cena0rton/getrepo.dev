@@ -33,7 +33,7 @@ export default function Page() {
       <div className="absolute h-screen inset-0 z-0 bg-[radial-gradient(125%_125%_at_50%_100%,_#171c1f_40%,_#6366f1_70%)] blur-3xl" />
       {/* Your Content/Components */}
       <div className='relative z-10 px-2'>
-        <div className='flex flex-col max-w-4xl items-center justify-center h-screen mx-auto'>
+        <div className='flex flex-col max-w-4xl items-center justify-center h-screen mx-auto md:pt-20'>
           <h1 className='lg:text-7xl/20 text-4xl/12 text-neutral-100 font-medium tracking-tight text-center  mx-auto'>
             Start <span className='text-[#83f77d] w-full relative p-1 bg-violet-500/10'>
 
@@ -85,7 +85,7 @@ export default function Page() {
           whileTap={{ x: 5, y: 5, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
           whileFocus={{ x: 2, y: 2, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
          
-          className='bg-linear-to-r absolute inset-0 z-20 font-medium from-[#5456f3] via-50% via-[#8789db] to-90% to-[#5456f3] px-4 py-2 cursor-pointer rounded-lg text-neutral-300  text-shadow-md text-shadow-neutral-500'
+          className='absolute inset-0 z-20 font-medium bg-[#7476f4] px-4 py-2 cursor-pointer rounded-lg text-neutral-300  text-shadow-md text-shadow-neutral-500'
         onClick={() => {router.push('/dashboard'), setClick(true)}}
         >
           {click ? "Starting..." : "Get Started"}
