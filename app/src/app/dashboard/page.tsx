@@ -19,7 +19,7 @@ const [click, setClick] = React.useState<boolean>(false)
 
 <div className='fixed z-20 top-0 w-full h-16 bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 flex items-center justify-between px-4'>
         <div className="flex items-center gap-4">
-          <h1 className='text-2xl font-medium tracking-tight text-neutral-900 text-shadow-sm dark:text-neutral-100 text-left'>getRepo<span className='text-[#6366f1]'>.dev</span></h1>
+          <h1 className='text-xl md:text-2xl font-medium tracking-tight text-neutral-900 text-shadow-sm dark:text-neutral-100 text-left'>getRepo<span className='text-[#6366f1]'>.dev</span></h1>
         
         </div>
 
@@ -53,7 +53,7 @@ const [click, setClick] = React.useState<boolean>(false)
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: 300, opacity: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100, damping: 12 }}
-      className="absolute w-100 top-13 -left-50 h-full bg-neutral-50 dark:bg-neutral-200 border-b border-neutral-200 dark:border-neutral-800"
+      className="absolute w-100 top-[50px] -left-50 h-full bg-neutral-50 dark:bg-neutral-200 border-b border-neutral-200 dark:border-neutral-800"
     >
       <Sidebar active={active} setActive={setActive}>
         <Link href="https://github.com/cena0rton/getrepo.dev" target='_blank' rel='noopener noreferrer'>

@@ -1,0 +1,723 @@
+2025-10-15T08:59:22.913260Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2025-10-15T08:59:22.913332Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app", pattern: "**/*", negated: false }
+2025-10-15T08:59:22.913408Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2025-10-15T08:59:22.913414Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app" }
+2025-10-15T08:59:22.914349Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.914732Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/postcss.config.mjs"
+2025-10-15T08:59:22.914809Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/README.md"
+2025-10-15T08:59:22.914825Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/tailwind.config.ts"
+2025-10-15T08:59:22.914853Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T08:59:22.914887Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/file.svg"
+2025-10-15T08:59:22.914902Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/git-branch.svg"
+2025-10-15T08:59:22.914917Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/vercel.svg"
+2025-10-15T08:59:22.914931Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/next.svg"
+2025-10-15T08:59:22.914945Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/globe.svg"
+2025-10-15T08:59:22.914958Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/window.svg"
+2025-10-15T08:59:22.914987Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/package.json"
+2025-10-15T08:59:22.915001Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/tsconfig.json"
+2025-10-15T08:59:22.915015Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/eslint.config.mjs"
+2025-10-15T08:59:22.915029Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/next.config.ts"
+2025-10-15T08:59:22.915048Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T08:59:22.915075Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T08:59:22.915106Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T08:59:22.915132Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide/page.tsx"
+2025-10-15T08:59:22.915155Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T08:59:22.915182Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/Dash.tsx"
+2025-10-15T08:59:22.915198Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/Sidebar.tsx"
+2025-10-15T08:59:22.915212Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T08:59:22.915227Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/Soon.tsx"
+2025-10-15T08:59:22.915254Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T08:59:22.915280Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T08:59:22.915303Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui/Loader.tsx"
+2025-10-15T08:59:22.915317Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui/SkeletonLoader.tsx"
+2025-10-15T08:59:22.915338Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T08:59:22.915362Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin/page.tsx"
+2025-10-15T08:59:22.915379Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/layout.tsx"
+2025-10-15T08:59:22.915398Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T08:59:22.915424Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T08:59:22.915446Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos/route.ts"
+2025-10-15T08:59:22.915466Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T08:59:22.915488Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending/route.ts"
+2025-10-15T08:59:22.915509Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T08:59:22.915535Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending/page.tsx"
+2025-10-15T08:59:22.915555Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T08:59:22.915579Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage/page.tsx"
+2025-10-15T08:59:22.915595Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/page.tsx"
+2025-10-15T08:59:22.915607Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/globals.css"
+2025-10-15T08:59:22.915627Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T08:59:22.915653Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils/ThemeProvider.tsx"
+2025-10-15T08:59:22.915746Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T08:59:22.915787Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components/ThemeSwitcher.tsx"
+2025-10-15T08:59:22.915831Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.915838Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.915842Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.915846Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 29 file(s)
+2025-10-15T08:59:22.916515Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/layout.tsx"
+2025-10-15T08:59:22.916516Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/postcss.config.mjs"
+2025-10-15T08:59:22.916516Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/Soon.tsx"
+2025-10-15T08:59:22.916564Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/Sidebar.tsx"
+2025-10-15T08:59:22.916604Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T08:59:22.916633Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage/page.tsx"
+2025-10-15T08:59:22.916657Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/page.tsx"
+2025-10-15T08:59:22.916683Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/README.md"
+2025-10-15T08:59:22.916691Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/Dash.tsx"
+2025-10-15T08:59:22.916701Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils/ThemeProvider.tsx"
+2025-10-15T08:59:22.916738Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/globe.svg"
+2025-10-15T08:59:22.916699Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos/route.ts"
+2025-10-15T08:59:22.916740Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui/Loader.tsx"
+2025-10-15T08:59:22.916742Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui/SkeletonLoader.tsx"
+2025-10-15T08:59:22.916822Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/file.svg"
+2025-10-15T08:59:22.916834Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/package.json"
+2025-10-15T08:59:22.916838Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components/ThemeSwitcher.tsx"
+2025-10-15T08:59:22.916750Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin/page.tsx"
+2025-10-15T08:59:22.916897Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/tailwind.config.ts"
+2025-10-15T08:59:22.917305Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/window.svg"
+2025-10-15T08:59:22.917453Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/next.config.ts"
+2025-10-15T08:59:22.917492Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/next.svg"
+2025-10-15T08:59:22.917507Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/eslint.config.mjs"
+2025-10-15T08:59:22.917562Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending/page.tsx"
+2025-10-15T08:59:22.917638Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending/route.ts"
+2025-10-15T08:59:22.917666Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide/page.tsx"
+2025-10-15T08:59:22.917686Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/tsconfig.json"
+2025-10-15T08:59:22.917902Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/vercel.svg"
+2025-10-15T08:59:22.917964Z  INFO tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public/git-branch.svg"
+2025-10-15T08:59:22.917984Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.917990Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.917994Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.918759Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.918768Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.918773Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.918777Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T08:59:22.918796Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/globals.css"
+2025-10-15T08:59:22.918802Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.918805Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.918809Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.918861Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.918868Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.919098Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.919503Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.919508Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.919939Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T08:59:22.920047Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T08:59:22.920072Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T08:59:22.920099Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T08:59:22.920133Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T08:59:22.920184Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T08:59:22.920208Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T08:59:22.920248Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T08:59:22.920285Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T08:59:22.920309Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T08:59:22.920340Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T08:59:22.920372Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T08:59:22.920402Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T08:59:22.920453Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T08:59:22.920483Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T08:59:22.920529Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.920574Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.920631Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.920635Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T08:59:22.920998Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T08:59:22.921101Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T08:59:22.921125Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T08:59:22.921151Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T08:59:22.921185Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T08:59:22.921234Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T08:59:22.921258Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T08:59:22.921297Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T08:59:22.921332Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T08:59:22.921355Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T08:59:22.921384Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T08:59:22.921414Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T08:59:22.921443Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T08:59:22.921484Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T08:59:22.921513Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T08:59:22.921557Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T08:59:22.922914Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:03.506018Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:03.507455Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:03.507604Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:03.507638Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:03.507672Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:03.507721Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:03.507766Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:03.507797Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:03.507825Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:03.507873Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:03.507918Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:03.507946Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:03.507983Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:03.508022Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:03.508058Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:03.508111Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:03.508147Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:03.508205Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:03.508212Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:03.508216Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:03.508220Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:00:03.508242Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:03.508248Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:03.508252Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:03.508261Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:03.508850Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:03.508864Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:03.508979Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:03.509741Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:03.509762Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:03.511856Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:03.512044Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:03.512090Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:03.512128Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:03.512179Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:03.512293Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:03.512334Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:03.512467Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:03.512537Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:03.512579Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:03.512624Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:03.512666Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:03.512719Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:03.512774Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:03.512813Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:03.512887Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:03.513171Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:03.513276Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:03.513283Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:08.783382Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:08.784481Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:08.784629Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:08.784663Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:08.784698Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:08.784757Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:08.784804Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:08.784840Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:08.784869Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:08.784920Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:08.784975Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:08.785005Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:08.785043Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:08.785082Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:08.785133Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:08.785193Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:08.785232Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:08.785330Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:08.785339Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:08.785344Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:08.785349Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:00:08.785378Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:08.785384Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:08.785388Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:08.785401Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:08.786298Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:08.786307Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:08.786409Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:08.786823Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:08.786832Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:08.787461Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:08.787605Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:08.787638Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:08.787671Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:08.787718Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:08.787787Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:08.787816Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:08.787866Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:08.787918Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:08.787947Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:08.787984Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:08.788023Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:08.788062Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:08.788128Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:08.788166Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:08.788231Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:08.788368Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:08.788460Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:08.788470Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:11.339376Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:11.340256Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:11.340429Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:11.340474Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:11.340532Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:11.340587Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:11.340635Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:11.340680Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:11.340717Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:11.340776Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:11.340832Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:11.340868Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:11.340914Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:11.340960Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:11.341007Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:11.341069Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:11.341162Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:11.341244Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:11.341253Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:11.341259Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:11.341263Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:00:11.341328Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:11.341336Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:11.341341Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:11.341362Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:11.342373Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:11.342382Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:11.342519Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:11.343082Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:11.343096Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:11.343683Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:11.343839Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:11.343883Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:11.343916Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:11.343956Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:11.344022Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:11.344051Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:11.344099Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:11.344150Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:11.344177Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:11.344213Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:11.344252Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:11.344295Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:11.344355Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:11.344400Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:11.344464Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:11.344538Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:11.344687Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:11.344693Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:15.010920Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:15.012316Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:15.012512Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:15.012550Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:15.012595Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:15.012657Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:15.012705Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:15.012753Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:15.012792Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:15.012853Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:15.012913Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:15.012951Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:15.012998Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:15.013047Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:15.013096Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:15.013161Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:15.013211Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:15.013283Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:15.013314Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:15.013330Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:15.013335Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:00:15.013467Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:15.013528Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:15.013536Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:15.013541Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:15.014084Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:15.014162Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:15.014268Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:15.014740Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:15.014755Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:15.015377Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:15.015550Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:15.015587Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:15.015628Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:15.015684Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:15.015795Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:15.015832Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:15.015896Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:15.015960Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:15.015995Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:15.016045Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:15.016101Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:15.016152Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:15.016217Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:15.016267Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:15.016338Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:15.016447Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:15.016504Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:15.016517Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:17.335778Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:17.336850Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:17.337025Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:17.337060Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:17.337105Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:17.337170Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:17.337419Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:17.337516Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:17.337567Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:17.337636Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:17.337701Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:17.337740Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:17.337792Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:17.337843Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:17.337909Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:17.337983Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:17.338039Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:17.338128Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:17.338140Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:17.338145Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:17.338149Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:00:17.338176Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:00:17.338184Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:17.338188Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:17.338193Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:17.339586Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:17.339597Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:17.340097Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:17.343830Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:17.343860Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:17.345822Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:00:17.346507Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:00:17.346652Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:00:17.346736Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:00:17.346836Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:00:17.347234Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:00:17.347342Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:00:17.347400Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:00:17.347596Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:00:17.347919Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:00:17.348405Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:00:17.349826Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:00:17.350597Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:00:17.352901Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:00:17.353148Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:00:17.353379Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:17.353936Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:00:17.357169Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:00:17.357201Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:39.221860Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:39.227192Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:01:39.228182Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:01:39.228446Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:01:39.228497Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:01:39.228551Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:01:39.228603Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:01:39.228995Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:01:39.229203Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:01:39.229456Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:01:39.229557Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:01:39.229870Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:01:39.230042Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:01:39.230553Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:01:39.230758Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:01:39.232678Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:01:39.233322Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:01:39.233646Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:39.233662Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:39.233669Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:39.233674Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:01:39.233796Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:01:39.233919Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:39.233951Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:39.234057Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:39.235453Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:39.235533Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:39.235827Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:39.236415Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:39.236440Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:39.238752Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:01:39.240229Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:01:39.240296Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:01:39.240335Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:01:39.240394Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:01:39.241055Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:01:39.241228Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:01:39.241727Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:01:39.242050Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:01:39.242187Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:01:39.242451Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:01:39.242614Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:01:39.242757Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:01:39.242982Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:01:39.243111Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:01:39.243402Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:39.243498Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:39.243651Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:39.243679Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:49.337931Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:49.341986Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:01:49.342333Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:01:49.342392Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:01:49.342457Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:01:49.342575Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:01:49.342653Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:01:49.342714Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:01:49.342777Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:01:49.342878Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:01:49.342986Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:01:49.343041Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:01:49.343122Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:01:49.343178Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:01:49.343232Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:01:49.343309Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:01:49.343383Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:01:49.343464Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:49.343472Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:49.343478Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:49.343482Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:01:49.343692Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:01:49.343720Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:49.343753Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:49.343759Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:49.344529Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:49.344539Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:49.344992Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:49.345402Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:49.345411Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:49.346214Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:01:49.346382Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:01:49.346417Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:01:49.346488Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:01:49.346627Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:01:49.346735Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:01:49.346775Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:01:49.346840Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:01:49.346896Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:01:49.346928Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:01:49.346970Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:01:49.347022Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:01:49.347062Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:01:49.347118Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:01:49.347156Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:01:49.347227Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:49.347281Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:49.347356Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:49.347362Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:58.317944Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:58.318955Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:01:58.319101Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:01:58.319314Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:01:58.319354Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:01:58.319399Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:01:58.319446Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:01:58.319478Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:01:58.319508Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:01:58.319556Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:01:58.319603Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:01:58.319631Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:01:58.319669Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:01:58.319708Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:01:58.320011Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:01:58.320201Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:01:58.320258Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:01:58.320338Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:58.320351Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:58.320358Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:58.320362Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:01:58.320387Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:01:58.320393Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:58.320397Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:58.320401Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:58.320669Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:58.320684Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:58.320858Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:58.321229Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:58.321234Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:58.322245Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:01:58.322401Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:01:58.322435Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:01:58.322467Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:01:58.322512Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:01:58.322584Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:01:58.322637Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:01:58.322689Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:01:58.322735Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:01:58.322850Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:01:58.322990Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:01:58.323071Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:01:58.323212Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:01:58.323364Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:01:58.323416Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:01:58.323492Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:58.323661Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:01:58.323754Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:01:58.323761Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:11.377389Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:11.378749Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:02:11.378888Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:02:11.378920Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:02:11.378952Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:02:11.378993Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:02:11.379039Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:02:11.379070Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:02:11.379098Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:02:11.379154Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:02:11.379205Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:02:11.379238Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:02:11.379282Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:02:11.379324Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:02:11.379370Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:02:11.379437Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:02:11.379481Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:02:11.379544Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:11.379550Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:11.379555Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:11.379560Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:02:11.379579Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:02:11.379585Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:11.379591Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:11.379599Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:11.379807Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:11.379821Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:11.379993Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:11.380337Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:11.380343Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:11.380756Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:02:11.380865Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:02:11.380891Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:02:11.380919Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:02:11.380953Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:02:11.381005Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:02:11.381030Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:02:11.381071Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:02:11.381111Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:02:11.381136Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:02:11.381167Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:02:11.381202Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:02:11.381234Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:02:11.381280Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:02:11.381312Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:02:11.381362Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:11.381471Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:11.381528Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:11.381536Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:38.551482Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:38.553180Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:02:38.553649Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:02:38.553701Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:02:38.553753Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:02:38.553968Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:02:38.554093Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:02:38.554145Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:02:38.554191Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:02:38.554635Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:02:38.554712Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:02:38.554759Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:02:38.554813Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:02:38.554866Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:02:38.554921Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:02:38.554994Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:02:38.555045Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:02:38.555123Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:38.555131Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:38.555137Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:38.555142Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:02:38.555166Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:02:38.555173Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:38.555178Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:38.555184Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:38.555426Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:38.555441Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:38.555679Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:38.556155Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:38.556171Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:38.556828Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:02:38.556985Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:02:38.557021Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:02:38.557076Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:02:38.557134Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:02:38.557214Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:02:38.557247Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:02:38.557324Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:02:38.557390Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:02:38.557427Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:02:38.557472Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:02:38.557517Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:02:38.557561Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:02:38.557644Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:02:38.557695Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:02:38.557765Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:38.557892Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:38.557954Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:38.557963Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:41.244982Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:41.245835Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:02:41.246015Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:02:41.246057Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:02:41.246102Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:02:41.246157Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:02:41.246204Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:02:41.246374Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:02:41.246440Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:02:41.246513Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:02:41.246577Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:02:41.246616Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:02:41.246665Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:02:41.246715Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:02:41.246765Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:02:41.246830Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:02:41.246879Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:02:41.246963Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:41.246972Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:41.246978Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:41.246983Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:02:41.247017Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:02:41.247025Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:41.247031Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:41.247035Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:41.247648Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:41.247657Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:41.248036Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:41.248920Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:41.248932Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:41.250069Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:02:41.250236Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:02:41.250271Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:02:41.250305Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:02:41.250352Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:02:41.250422Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:02:41.250452Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:02:41.250508Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:02:41.250558Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:02:41.250590Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:02:41.250630Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:02:41.250671Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:02:41.250709Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:02:41.250787Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:02:41.250836Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:02:41.250901Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:41.250985Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:41.251051Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:41.251057Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:50.373952Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:50.379302Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:02:50.379666Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:02:50.379967Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:02:50.380090Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:02:50.380415Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:02:50.380784Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:02:50.380835Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:02:50.380879Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:02:50.380950Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:02:50.381009Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:02:50.381047Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:02:50.381100Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:02:50.381152Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:02:50.381209Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:02:50.381275Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:02:50.381322Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:02:50.381410Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:50.381419Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:50.381424Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:50.381428Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2025-10-15T09:02:50.381455Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard/page.tsx"
+2025-10-15T09:02:50.381462Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:50.381467Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:50.381472Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:50.381643Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:50.381650Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:50.381719Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:50.382134Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:50.382142Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:50.382761Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/public"
+2025-10-15T09:02:50.382892Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src"
+2025-10-15T09:02:50.382922Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app"
+2025-10-15T09:02:50.382954Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/guide"
+2025-10-15T09:02:50.382996Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/dashboard"
+2025-10-15T09:02:50.383053Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components"
+2025-10-15T09:02:50.383082Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/components/ui"
+2025-10-15T09:02:50.383141Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/signin"
+2025-10-15T09:02:50.383183Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api"
+2025-10-15T09:02:50.383210Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/repos"
+2025-10-15T09:02:50.383244Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/api/trending"
+2025-10-15T09:02:50.383278Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/trending"
+2025-10-15T09:02:50.383312Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/app/landingpage"
+2025-10-15T09:02:50.383357Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/utils"
+2025-10-15T09:02:50.383390Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/pawanmishra/Desktop/Projects MAIN/getRepo/app/src/components"
+2025-10-15T09:02:50.383445Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:50.384354Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2025-10-15T09:02:50.384425Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2025-10-15T09:02:50.384434Z  INFO get_globs: tailwindcss_oxide::scanner: exit
