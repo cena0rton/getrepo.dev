@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 "use client"
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
@@ -75,17 +76,19 @@ export default function Page() {
 
           <motion.div className='flex items-center  justify-center gap-2 mt-8 group'>
             <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition:{ duration: 3, type: "spring", stiffness: 300, damping: 10 } }}
             className='h-10 w-32 relative z-10 inset-0 rounded-lg bg-neutral-400 [background-image:repeating-linear-gradient(135deg,_transparent,_transparent_1px,_#8789db_1px,_#6366f1_4px)] transition-all duration-300  backdrop-blur-[10px]'>
          
           <motion.button
-          initial={{ x: 15, y:15
+          initial={{ x: 15, y:15, opacity: 0
            }}
-          animate={{ x: 0, y: 0, transition:{ duration: 3, type: "spring", stiffness: 300, damping: 10 } }}
-          whileHover={{ x: 5, y: 5, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
-          whileTap={{ x: 5, y: 5, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
-          whileFocus={{ x: 2, y: 2, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
+          animate={{ x: 5, y: 5, opacity: 1, transition:{ duration: 3, type: "spring", stiffness: 300, damping: 10 } }}
+          whileHover={{ x: 0, y: 0, opacity: 1, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
+          whileTap={{ x: 0, y: 0, opacity: 1, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
+          whileFocus={{ x: 2, y: 2, opacity: 1, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
          
-          className='absolute inset-0 z-20 font-medium bg-[#5d5ff7] px-4 py-2 cursor-pointer rounded-lg text-neutral-100  text-shadow-md text-shadow-neutral-500'
+          className='absolute inset-0 z-20 font-medium bg-[#5154f6] px-4 py-2 cursor-pointer rounded-lg text-neutral-100  text-shadow-md text-shadow-neutral-500'
         onClick={() => {router.push('/dashboard'), setClick(true)}}
         >
           {click ? "Starting..." : "Get Started"}
