@@ -85,7 +85,7 @@ export default function Page() {
           whileTap={{ x: 5, y: 5, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
           whileFocus={{ x: 2, y: 2, transition:{ duration: 0.5, type: "spring", stiffness: 500, damping: 10 } }}
          
-          className='absolute inset-0 z-20 font-medium bg-[#7476f4] px-4 py-2 cursor-pointer rounded-lg text-neutral-300  text-shadow-md text-shadow-neutral-500'
+          className='absolute inset-0 z-20 font-medium bg-[#5d5ff7] px-4 py-2 cursor-pointer rounded-lg text-neutral-100  text-shadow-md text-shadow-neutral-500'
         onClick={() => {router.push('/dashboard'), setClick(true)}}
         >
           {click ? "Starting..." : "Get Started"}
