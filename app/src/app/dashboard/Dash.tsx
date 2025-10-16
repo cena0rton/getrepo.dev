@@ -170,8 +170,8 @@ export default function Dash() {
 
   return (
     <div className="w-full h-screen mx-auto py-4 md:px-4 space-y-4 border-t border-neutral-100/20 dark:border-neutral-800 flex-1">
-      <div className="relative dark:bg-[#6366f1]/40 bg-[#6366f1]/40">
-        <div className="flex flex-col gap-4 dark:bg-neutral-900 bg-neutral-50 p-4 rounded-2xl border-1 border-[#6366f1]/30 dark:border-[#6366f1]/30">
+      <div className="relative dark:bg-[#6366f1]/40 ">
+        <div className="flex flex-col gap-4 dark:bg-neutral-900 bg-neutral-50 p-4 rounded-2xl border-1 dark:border-[#6366f1]/20 border-neutral-200">
           <h1 className="text-2xl font-medium tracking-tight">
             Search for <span className="text-[#6366f1]">Repos</span> you want to contribute to
           </h1>
@@ -180,13 +180,13 @@ export default function Dash() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search (e.g. nextjs, express, typescript)"
-              className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 border-[#6366f1]/40 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 focus:ring-1 focus:ring-neutral-300 dark:focus:ring-[#6366f1]/40 transition-all duration-100 "
+              className="w-full border bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 dark:border-[#6366f1]/40 border-neutral-200 rounded px-3 py-2 outline-none dark:text-neutral-300 text-neutral-800 focus:ring-1 focus:ring-neutral-300 dark:focus:ring-[#6366f1]/40 transition-all duration-100 placeholder:text-neutral-400 "
             />
             <div className="flex justify-start items-center md:grid md:grid-cols-[1fr_140px_140px_120px] gap-2 w-full mx-auto md:overflow-x-visible">
             <select
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
-              className="border border-[#6366f1]/40 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 w-36 "
+              className="border dark:border-[#6366f1]/40 border-neutral-200 rounded px-2 py-2 bg-linear-to-r from-neutral-100 to-neutral-50 dark:bg-linear-to-tr dark:from-neutral-800 dark:to-neutral-950 outline-none dark:text-neutral-300 w-36 "
             >
               <option value="" className="text-neutral-300">All languages</option>
               <option value="JavaScript">JavaScript</option>
